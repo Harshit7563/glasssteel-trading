@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" fill="none" role="img" aria-label="GlassSteel">
+  <defs>
+    <linearGradient id="gsGlass" x1="8" y1="6" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EC4D8"/>
+      <stop offset="0.55" stop-color="#3D6F86"/>
+      <stop offset="1" stop-color="#1C3A48"/>
+    </linearGradient>
+    <linearGradient id="gsSteel" x1="18" y1="10" x2="46" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8D5A8"/>
+      <stop offset="0.45" stop-color="#C8A46A"/>
+      <stop offset="1" stop-color="#8A6A35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mark -->
+  <rect x="2" y="4" width="48" height="48" rx="6" fill="#12151A"/>
+  <!-- Glass pane -->
+  <path d="M12 14h18c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H12c-1.1 0-2-.9-2-2V16c0-1.1.9-2 2-2z" fill="url(#gsGlass)" opacity="0.95"/>
+  <path d="M14 17h8l-6 14h-3l1-14z" fill="#fff" opacity="0.28"/>
+  <!-- Steel frame accent -->
+  <path d="M28 18h12v4H32v16h-4V18z" fill="url(#gsSteel)"/>
+  <path d="M24 38h16v4H24z" fill="url(#gsSteel)"/>
+
+  <!-- Wordmark -->
+  <text x="64" y="36" fill="#C8A46A" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="900" letter-spacing="1.5">GlassSteel</text>
+</svg>

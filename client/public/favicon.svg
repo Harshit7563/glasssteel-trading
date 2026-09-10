@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="fGlass" x1="5" y1="4" x2="27" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EC4D8"/>
+      <stop offset="0.55" stop-color="#3D6F86"/>
+      <stop offset="1" stop-color="#1C3A48"/>
+    </linearGradient>
+    <linearGradient id="fSteel" x1="11" y1="7" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8D5A8"/>
+      <stop offset="0.45" stop-color="#C8A46A"/>
+      <stop offset="1" stop-color="#8A6A35"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="6" fill="#12151A"/>
+  <path d="M7 8h12c.8 0 1.5.7 1.5 1.5v13c0 .8-.7 1.5-1.5 1.5H7c-.8 0-1.5-.7-1.5-1.5v-13C5.5 8.7 6.2 8 7 8z" fill="url(#fGlass)"/>
+  <path d="M8.5 10h5.5L10 21H8l.5-11z" fill="#fff" opacity="0.28"/>
+  <path d="M18 11h7v2.5h-4.5V23H18V11z" fill="url(#fSteel)"/>
+  <path d="M15.5 23.5H25V26H15.5z" fill="url(#fSteel)"/>
+</svg>

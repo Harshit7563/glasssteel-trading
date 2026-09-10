@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="GlassSteel">
+  <defs>
+    <linearGradient id="mGlass" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EC4D8"/>
+      <stop offset="0.55" stop-color="#3D6F86"/>
+      <stop offset="1" stop-color="#1C3A48"/>
+    </linearGradient>
+    <linearGradient id="mSteel" x1="22" y1="14" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8D5A8"/>
+      <stop offset="0.45" stop-color="#C8A46A"/>
+      <stop offset="1" stop-color="#8A6A35"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="10" fill="#12151A"/>
+  <path d="M14 16h24c1.7 0 3 1.3 3 3v26c0 1.7-1.3 3-3 3H14c-1.7 0-3-1.3-3-3V19c0-1.7 1.3-3 3-3z" fill="url(#mGlass)"/>
+  <path d="M17 20h11L20 42h-4l1-22z" fill="#fff" opacity="0.28"/>
+  <path d="M36 22h14v5H41v20h-5V22z" fill="url(#mSteel)"/>
+  <path d="M31 47h19v5H31z" fill="url(#mSteel)"/>
+</svg>

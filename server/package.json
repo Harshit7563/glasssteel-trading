@@ -1,0 +1,26 @@
+{
+  "name": "glassteel-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch-path=./src src/index.js",
+    "start": "node src/index.js",
+    "db:setup": "node src/db/setup.js",
+    "db:add-categories": "node src/db/add-categories.js",
+    "db:seed-home-interior": "node src/db/seed-home-interior.js",
+    "db:seed-all-real": "node src/db/seed-all-real.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10"
+  }
+}
