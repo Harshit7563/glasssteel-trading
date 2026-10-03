@@ -583,23 +583,267 @@ export const policies = {
   },
   "shipping-policy": {
     title: "Shipping & Dispatch Policy",
-    updated: "9 September 2026",
+    effective: "19 June 2026",
+    updated: "19 June 2026",
+    website: "https://glasssteel.in/",
+    intro: [
+      "This Shipping & Dispatch Policy applies to orders placed with GLASSTEEL TRADING (OPC) PRIVATE LIMITED (“GlassSteel”, “we”, “us”, or “our”) through https://glasssteel.in/ or our authorised sales channels.",
+      "It explains our delivery coverage, dispatch timelines, freight charges, packaging, delivery arrangements, and handling of transit-related issues.",
+      "Please read this Policy together with our Terms of Use, Return & Refund Policy, Cancellation Policy, and the specific terms disclosed and agreed for your order. Nothing in this Policy limits rights available under applicable law.",
+    ],
     sections: [
       {
-        heading: "Dispatch coverage",
-        body: "We arrange pan-India dispatch from trading stock or partner fabricators. Delivery timelines depend on destination, SKU type (ready stock vs made-to-order), and transporter availability.",
+        heading: "1. Delivery coverage",
+        body: "We arrange dispatch across India through courier services, transporters, freight providers, and supply partners, subject to serviceability. Availability depends on:",
+        list: [
+          "Delivery PIN code and site accessibility.",
+          "Product dimensions, weight, and fragility.",
+          "Order quantity and vehicle requirements.",
+          "Transporter coverage and local restrictions.",
+          "Availability of suitable handling facilities.",
+        ],
+        paragraphs: [
+          "Pan-India dispatch does not mean that every product can be delivered to every address. We will confirm any delivery restrictions before accepting the affected order.",
+          "International shipping is outside the scope of this Policy and requires a separate written arrangement.",
+        ],
       },
       {
-        heading: "Ready stock vs made-to-order",
-        body: "Items marked In Stock are typically prepared for dispatch within 1–4 business days after order confirmation and advance (if applicable). Made-to-Order / Limited Stock items follow the lead time stated on the quotation.",
+        heading: "2. Dispatch and delivery are different",
+        paragraphs: [
+          "Dispatch means that the goods have been handed over to the carrier for transportation.",
+          "Delivery means that the goods have reached the agreed delivery point and have been handed over to you or your authorised recipient.",
+          "A dispatch estimate is not a delivery estimate. Total fulfilment time may include order processing, production or procurement, packing, dispatch, and transportation.",
+        ],
       },
       {
-        heading: "Freight & packaging",
-        body: "Freight may be billed extra or included as per quotation. Glass and steel goods are packed for transit; buyers must inspect packages at delivery and note damage on the LR/POD before accepting.",
+        heading: "3. Order processing requirements",
+        body: "Order processing begins after the applicable requirements have been completed, including:",
+        list: [
+          "Order acceptance and confirmation.",
+          "Receipt of the agreed payment or advance.",
+          "Confirmation of billing and delivery information.",
+          "Approval of custom specifications, drawings, dimensions, or finishes.",
+          "Confirmation of any special transport or unloading arrangements.",
+        ],
+        paragraphs: [
+          "If information or approval is missing, we will contact you. The dispatch estimate may need to be revised to reflect the delay.",
+          "We will not apply undisclosed conditions or additional charges after an order has been accepted without an appropriate basis and your agreement where required.",
+        ],
       },
       {
-        heading: "Delays",
-        body: "Force majeure, transporter strikes, weather, or customs/check-post delays may extend delivery. We will communicate revised ETAs where possible.",
+        heading: "4. Dispatch timelines",
+        subsections: [
+          {
+            heading: "4.1 Ready-stock products",
+            paragraphs: [
+              "Items confirmed as In Stock are typically prepared and dispatched within 1–4 business days after order confirmation and receipt of any required payment or advance.",
+              "Any different dispatch estimate will be communicated before order acceptance or promptly if an unexpected issue arises.",
+            ],
+          },
+          {
+            heading: "4.2 Limited-stock or procured products",
+            paragraphs: [
+              "Products requiring stock confirmation or procurement follow the lead time stated in the accepted quotation or order confirmation.",
+              "If stock becomes unavailable, we will explain the available options, which may include waiting for replenishment, accepting an alternative, or cancelling the affected item for a refund.",
+              "We will not substitute products without your agreement.",
+            ],
+          },
+          {
+            heading: "4.3 Made-to-order and customised products",
+            paragraphs: [
+              "Custom glass, fabricated steel, cut-to-size materials, special finishes, and other made-to-order products follow the production and dispatch schedule agreed for the order.",
+              "The lead time normally begins after the required advance and final specification approvals have been received.",
+              "Changes requested after approval may affect the schedule. Revised costs and timelines will be explained and agreed before implementing the change.",
+            ],
+          },
+          {
+            heading: "4.4 Business days",
+            body: "For this Policy, business days are Monday to Saturday, excluding public holidays at the relevant dispatch location.",
+          },
+        ],
+      },
+      {
+        heading: "5. Estimated delivery times",
+        paragraphs: [
+          "Transportation time depends on the origin, destination, product type, shipment size, and carrier.",
+          "The estimated delivery date or delivery window will be communicated through the checkout process, quotation, or order confirmation, as applicable.",
+          "Where relevant, we will clarify whether a date is an estimate or an expressly agreed delivery commitment.",
+          "For time-sensitive projects, tell us your required delivery date before ordering so that feasibility can be checked. Any guaranteed date must be expressly confirmed in writing.",
+        ],
+      },
+      {
+        heading: "6. Shipping, freight, and packaging charges",
+        body: "Shipping may be included in the quoted price or charged separately, as disclosed before purchase. Charges may depend on:",
+        list: [
+          "Actual or volumetric weight.",
+          "Shipment dimensions and number of packages.",
+          "Destination and distance.",
+          "Fragile or specialised handling.",
+          "Wooden crates, pallets, or protective packaging.",
+          "Dedicated vehicle requirements.",
+          "Agreed unloading or lifting services.",
+        ],
+        paragraphs: [
+          "Applicable freight, packaging, handling charges, and taxes will be identified before you confirm the order.",
+          "Free shipping applies only where expressly offered and subject to conditions disclosed with that offer.",
+          "If freight is payable directly to the transporter, the amount or agreed calculation method and payment responsibility will be disclosed before order acceptance.",
+        ],
+      },
+      {
+        heading: "7. Packaging and fragile materials",
+        paragraphs: [
+          "We arrange packaging appropriate to the product and agreed transport method.",
+          "Glass, mirrors, decorative panels, and other fragile products may require protective wrapping, corner protection, crates, or other specialised packaging. Steel and bulky materials may require bundling, pallets, or protective coverings.",
+          "Special packaging charges, where applicable, will be disclosed before purchase.",
+          "Please retain packaging and product labels while checking the delivery and while a damage claim is being assessed, where reasonably practical.",
+          "Packaging does not remove our responsibility to address damage or non-conforming goods under the agreed terms and applicable law.",
+        ],
+      },
+      {
+        heading: "8. Shipment updates and tracking",
+        body: "After dispatch, we will provide available shipment information through the contact channel used for your order. This may include:",
+        list: [
+          "Carrier or transporter name.",
+          "Tracking or consignment number.",
+          "Dispatch date.",
+          "Estimated delivery window.",
+          "Lorry Receipt or transport reference, where applicable.",
+        ],
+        paragraphs: [
+          "Some freight operators do not offer live online tracking. In such cases, shipment updates may be obtained through our support team or the transporter.",
+          "If tracking appears inactive or delivery is overdue, contact us with your order reference.",
+        ],
+      },
+      {
+        heading: "9. Delivery address and changes",
+        paragraphs: [
+          "You are responsible for providing a complete and accurate delivery address, PIN code, recipient name, and contact number.",
+          "Please notify us promptly if a correction is needed.",
+          "Address changes before dispatch are subject to feasibility and may affect freight charges or delivery estimates.",
+          "After dispatch, rerouting depends on the transporter’s ability to accommodate the request. Any additional cost will be explained and agreed where applicable.",
+          "If an addressing error is caused by us, we will arrange an appropriate correction without charging you for our error.",
+        ],
+      },
+      {
+        heading: "10. Delivery point, site access, and unloading",
+        body: "The agreed delivery point must be clear before dispatch. Depending on the order, this may be a residential address, commercial premises, accessible project site, or an expressly agreed transporter collection point. We will not assume that delivery to a transport depot is equivalent to delivery to your address unless you have agreed to that arrangement. For bulky or heavy materials, the order should specify:",
+        list: [
+          "Vehicle access requirements.",
+          "Ground-level, kerbside, or other agreed delivery location.",
+          "Responsibility for unloading.",
+          "Availability of labour, forklifts, cranes, or lifting equipment.",
+          "Any floor delivery, internal movement, or placement service.",
+        ],
+        paragraphs: [
+          "Installation, assembly, lifting to upper floors, and movement within a building are included only where expressly agreed.",
+          "Tell us before dispatch about narrow roads, restricted entry times, permits, low clearances, or other access limitations.",
+        ],
+      },
+      {
+        heading: "11. Recipient availability and failed delivery",
+        paragraphs: [
+          "Please arrange for an authorised person to receive the shipment during the agreed delivery window.",
+          "Delivery may be unsuccessful if the address is incorrect, the recipient is unavailable, access is restricted, or agreed unloading arrangements are missing.",
+          "We will coordinate the next practical step, which may include redelivery, collection, temporary storage, or return to origin.",
+          "Reasonable additional charges attributable to customer arrangements may apply only where disclosed, justified, and permitted by law. We will explain them before arranging the additional service where practicable.",
+          "Charges caused by our error or the carrier’s failure will not be passed to you as customer-caused costs.",
+          "A failed delivery does not automatically result in forfeiture of the full order value.",
+        ],
+      },
+      {
+        heading: "12. Partial and multiple shipments",
+        paragraphs: [
+          "An order may require dispatch from more than one warehouse, supplier, or fabricator.",
+          "Where this affects the agreed delivery arrangement, we will inform you about the shipment split and expected schedule.",
+          "Additional freight resulting from a shipment split initiated by us will not be charged without prior disclosure and your agreement.",
+          "Receipt of one shipment does not confirm receipt of the remaining items.",
+        ],
+      },
+      {
+        heading: "13. Checking your delivery",
+        body: "At delivery, please check the package count and look for visible signs of damage, opening, crushing, moisture, or mishandling. Where possible:",
+        list: [
+          "Compare package details with the delivery documents.",
+          "Record visible damage or shortages on the Proof of Delivery (POD) or Lorry Receipt (LR).",
+          "Photograph the packaging, labels, and affected items.",
+          "Contact us promptly with your order reference.",
+        ],
+        paragraphs: [
+          "Do not sign a statement confirming that goods were inspected and found undamaged if you have not been able to inspect them.",
+          "If damage is severe or unloading would be unsafe, contact us before proceeding where possible. Explain the issue to the driver and record the condition.",
+          "A delivery signature or failure to note damage on the carrier document does not automatically remove your rights concerning hidden damage, defects, or incorrect supply.",
+        ],
+      },
+      {
+        heading: "14. Transit damage, missing items, and incorrect goods",
+        body: "Please report transit damage, shortages, or incorrect items as soon as reasonably possible after discovery. To help us investigate, provide available information such as:",
+        list: [
+          "Order or invoice number.",
+          "Delivery date.",
+          "Product and quantity affected.",
+          "Photographs of the item, packaging, and shipping label.",
+          "Relevant delivery remarks.",
+        ],
+        paragraphs: [
+          "An unboxing video may help but is not mandatory as the sole evidence of a valid claim.",
+          "We will review the issue and coordinate an appropriate remedy, such as replacement, repair where suitable and agreed, supply of missing items, or refund, depending on the circumstances and applicable rights.",
+          "We will not require you to resolve a carrier claim independently as a precondition to a remedy we are legally obliged to provide.",
+          "Avoid installing, altering, or disposing of affected goods before contacting us, unless necessary for safety. Take reasonable steps to prevent further damage.",
+        ],
+      },
+      {
+        heading: "15. Delayed or lost shipments",
+        paragraphs: [
+          "If a shipment is materially delayed, appears lost, or is marked delivered but has not been received, contact us promptly.",
+          "We will investigate with the carrier and provide available updates.",
+          "Depending on the outcome, we will discuss a revised delivery date, replacement, cancellation, or refund as appropriate.",
+          "Delays may arise from weather, transport disruption, government restrictions, road closures, or other events beyond reasonable control. Such events do not automatically remove our legal obligations or permit an indefinite delay without a resolution.",
+        ],
+      },
+      {
+        heading: "16. Transit responsibility and insurance",
+        paragraphs: [
+          "For deliveries arranged by us, we will remain your contact for transit problems and fulfil our responsibilities under the accepted order and applicable law.",
+          "Dispatch alone does not mean that all risk or responsibility has transferred to you.",
+          "Where you independently appoint a carrier or collect goods, the handover arrangements and allocation of transit responsibilities must be expressly agreed in advance, subject to applicable law.",
+          "Transit insurance, if offered or included, will be identified in the quotation along with relevant conditions. Do not assume that every shipment has a separately issued insurance policy.",
+          "Insurance claim processing does not override your rights against the seller.",
+        ],
+      },
+      {
+        heading: "17. Customer-requested holds and storage",
+        paragraphs: [
+          "If you ask us to delay dispatch after goods are ready, we will confirm whether storage is available and whether the delivery schedule needs to change.",
+          "Any storage charge, payment requirement, or storage limit must be disclosed and agreed before it applies.",
+          "We will not automatically abandon, resell, or dispose of paid goods without appropriate notice and a lawful basis.",
+        ],
+      },
+      {
+        heading: "18. Returns and reverse logistics",
+        paragraphs: [
+          "Return collection, replacement dispatch, and refund arrangements are governed by our Return & Refund Policy and the circumstances of the claim.",
+          "Where the issue concerns our incorrect supply or another fault for which we are responsible, you will not be required to bear return costs that are our responsibility under applicable law.",
+          "For an eligible change-of-mind return, any customer-paid return freight must have been disclosed before purchase.",
+          "Please contact us before returning bulky or fragile products so that suitable handling and return instructions can be arranged.",
+        ],
+      },
+      {
+        heading: "19. Contact and escalation",
+        paragraphs: [
+          "For dispatch updates, delivery issues, or transit claims, contact GLASSTEEL TRADING (OPC) PRIVATE LIMITED using the shipping support email, telephone, and postal address shown at the end of this page.",
+          "Support hours: Monday to Saturday, 10:00–18:00 IST (excluding public holidays).",
+          "Please include your order or enquiry reference.",
+          "If the issue remains unresolved, escalate using the same support email with the subject line “Shipping Grievance”.",
+          "Complaints will be handled within the timelines required by applicable law. Nothing in this Policy prevents you from approaching an appropriate consumer forum or authority.",
+        ],
+      },
+      {
+        heading: "20. Policy updates",
+        paragraphs: [
+          "We may update this Policy to reflect changes in our delivery arrangements or legal requirements.",
+          "The version disclosed and agreed when your order was accepted will apply to that order, unless a later change is mutually agreed or required by law.",
+          "The latest version will be published on this page with an updated date.",
+        ],
       },
     ],
   },

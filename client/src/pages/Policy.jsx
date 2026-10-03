@@ -124,12 +124,14 @@ export default function Policy() {
             </div>
           ))}
 
-          {slug === "privacy-policy" || slug === "terms-of-use" ? (
+          {["privacy-policy", "terms-of-use", "shipping-policy"].includes(slug) ? (
             <div className="policy-block">
               <h2>
                 {slug === "privacy-policy"
                   ? "Privacy contact details"
-                  : "Company contact details"}
+                  : slug === "shipping-policy"
+                    ? "Shipping support contact"
+                    : "Company contact details"}
               </h2>
               <p>
                 <strong>Company:</strong>{" "}
