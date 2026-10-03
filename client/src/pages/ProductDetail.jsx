@@ -1,18 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import ProductCard from "../components/ProductCard";
 import { discountPercent, inr } from "../utils";
+
+function galleryFor(product) {
+  if (!product) return ["/products/steel-01.jpg"];
+  const fromArr = Array.isArray(product.image_urls) ? product.image_urls : [];
+  const list = [...fromArr];
+  if (product.image_url) list.unshift(product.image_url);
+  const unique = [
+    ...new Set(list.map((u) => String(u || "").trim()).filter(Boolean)),
+  ];
+  return unique.length ? unique : ["/products/steel-01.jpg"];
+}
 
 export default function ProductDetail() {
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const [activeImg, setActiveImg] = useState(0);
 
   useEffect(() => {
     setLoading(true);
     setError("");
+    setActiveImg(0);
     api
       .getProduct(id)
       .then(setData)
@@ -20,7 +33,8 @@ export default function ProductDetail() {
       .finally(() => setLoading(false));
   }, [id]);
 
-  const primaryImg = data?.product?.image_url || "/products/steel-01.jpg";
+  const gallery = useMemo(() => galleryFor(data?.product), [data?.product]);
+  const primaryImg = gallery[activeImg] || gallery[0];
 
   if (loading) {
     return (
@@ -72,6 +86,21 @@ export default function ProductDetail() {
               />
               {off > 0 ? <span className="badge-off">{off}% OFF</span> : null}
             </div>
+            {gallery.length > 1 ? (
+              <div className="detail-thumbs">
+                {gallery.map((src, idx) => (
+                  <button
+                    key={src}
+                    type="button"
+                    className={idx === activeImg ? "active" : ""}
+                    onClick={() => setActiveImg(idx)}
+                    aria-label={`View image ${idx + 1}`}
+                  >
+                    <img src={src} alt="" />
+                  </button>
+                ))}
+              </div>
+            ) : null}
           </div>
 
           <div className="detail-info">

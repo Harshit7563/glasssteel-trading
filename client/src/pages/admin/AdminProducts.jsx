@@ -24,7 +24,15 @@ const EMPTY = {
   stock_status: "In Stock",
   featured: false,
   image_url: "",
+  image_urls: [],
 };
+
+function productImageList(item) {
+  const fromArr = Array.isArray(item?.image_urls) ? item.image_urls : [];
+  const list = [...fromArr];
+  if (item?.image_url) list.unshift(item.image_url);
+  return [...new Set(list.map((u) => String(u || "").trim()).filter(Boolean))];
+}
 
 export default function AdminProducts() {
   const { logout, user } = useAuth();
@@ -103,20 +111,34 @@ export default function AdminProducts() {
       moq: String(item.moq ?? "1"),
       stock_status: item.stock_status || "In Stock",
       featured: !!item.featured,
-      image_url: item.image_url || "",
+      image_url: productImageList(item)[0] || "",
+      image_urls: productImageList(item),
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   async function onUpload(e) {
-    const file = e.target.files?.[0];
-    if (!file) return;
+    const files = [...(e.target.files || [])];
+    if (!files.length) return;
     setUploadBusy(true);
     setMessage("");
+    setError("");
     try {
-      const data = await api.adminUploadImage(file);
-      setForm((f) => ({ ...f, image_url: data.image_url }));
-      setMessage("Image uploaded");
+      const data = await api.adminUploadImages(files);
+      const uploaded = data.image_urls || (data.image_url ? [data.image_url] : []);
+      setForm((f) => {
+        const next = [...new Set([...(f.image_urls || []), ...uploaded])];
+        return {
+          ...f,
+          image_urls: next,
+          image_url: next[0] || "",
+        };
+      });
+      setMessage(
+        uploaded.length > 1
+          ? `${uploaded.length} images uploaded`
+          : "Image uploaded"
+      );
     } catch (err) {
       setError(err.message || "Upload failed");
     } finally {
@@ -125,12 +147,32 @@ export default function AdminProducts() {
     }
   }
 
+  function removeImage(url) {
+    setForm((f) => {
+      const next = (f.image_urls || []).filter((u) => u !== url);
+      return {
+        ...f,
+        image_urls: next,
+        image_url: next[0] || "",
+      };
+    });
+  }
+
+  function setCoverImage(url) {
+    setForm((f) => {
+      const rest = (f.image_urls || []).filter((u) => u !== url);
+      const next = [url, ...rest];
+      return { ...f, image_urls: next, image_url: url };
+    });
+  }
+
   async function onSubmit(e) {
     e.preventDefault();
     setBusy(true);
     setError("");
     setMessage("");
     try {
+      const image_urls = productImageList(form);
       const payload = {
         ...form,
         category_id: Number(form.category_id),
@@ -139,6 +181,8 @@ export default function AdminProducts() {
         gst_percent: Number(form.gst_percent || 18),
         moq: Number(form.moq || 1),
         featured: !!form.featured,
+        image_urls,
+        image_url: image_urls[0] || "",
       };
       if (editing) {
         await api.adminUpdateProduct(form.id, payload);
@@ -353,12 +397,47 @@ export default function AdminProducts() {
             </div>
 
             <div className="field">
-              <label>Product image</label>
-              <input type="file" accept="image/*" onChange={onUpload} disabled={uploadBusy} />
-              {form.image_url ? (
-                <div className="admin-preview">
-                  <img src={form.image_url} alt="Preview" />
-                  <code>{form.image_url}</code>
+              <label>Product images (multiple)</label>
+              <input
+                type="file"
+                accept="image/*"
+                multiple
+                onChange={onUpload}
+                disabled={uploadBusy}
+              />
+              <p className="admin-hint">
+                {uploadBusy
+                  ? "Uploading…"
+                  : "Select multiple photos. First image is the cover."}
+              </p>
+              {form.image_urls?.length ? (
+                <div className="admin-images">
+                  {form.image_urls.map((url, idx) => (
+                    <figure key={url} className={idx === 0 ? "is-cover" : ""}>
+                      <img src={url} alt={`Product ${idx + 1}`} />
+                      <figcaption>
+                        {idx === 0 ? "Cover" : `Image ${idx + 1}`}
+                      </figcaption>
+                      <div className="admin-image-actions">
+                        {idx !== 0 ? (
+                          <button
+                            type="button"
+                            className="btn btn-ghost"
+                            onClick={() => setCoverImage(url)}
+                          >
+                            Set cover
+                          </button>
+                        ) : null}
+                        <button
+                          type="button"
+                          className="btn btn-ghost"
+                          onClick={() => removeImage(url)}
+                        >
+                          Remove
+                        </button>
+                      </div>
+                    </figure>
+                  ))}
                 </div>
               ) : null}
             </div>

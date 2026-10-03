@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS products (
   featured BOOLEAN NOT NULL DEFAULT FALSE,
   image_gradient TEXT NOT NULL DEFAULT 'steel',
   image_url TEXT NOT NULL DEFAULT '/products/steel-01.jpg',
+  image_urls JSONB NOT NULL DEFAULT '[]'::jsonb,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 

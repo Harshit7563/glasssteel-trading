@@ -90,4 +90,9 @@ export const api = {
     form.append("image", file);
     return request("/api/admin/upload", { method: "POST", body: form });
   },
+  adminUploadImages: (files) => {
+    const form = new FormData();
+    [...files].forEach((file) => form.append("images", file));
+    return request("/api/admin/upload", { method: "POST", body: form });
+  },
 };

@@ -36,6 +36,42 @@ const upload = multer({
 
 router.use(adminRequired);
 
+export async function ensureProductImagesColumn() {
+  await query(
+    `ALTER TABLE products ADD COLUMN IF NOT EXISTS image_urls JSONB NOT NULL DEFAULT '[]'::jsonb`
+  );
+  await query(
+    `UPDATE products
+     SET image_urls = jsonb_build_array(image_url)
+     WHERE (image_urls IS NULL OR image_urls = '[]'::jsonb)
+       AND image_url IS NOT NULL
+       AND image_url <> ''`
+  );
+}
+
+function normalizeImageUrls(urls, primary) {
+  const list = [];
+  if (Array.isArray(urls)) {
+    list.push(...urls);
+  } else if (typeof urls === "string" && urls.trim()) {
+    try {
+      const parsed = JSON.parse(urls);
+      if (Array.isArray(parsed)) list.push(...parsed);
+      else list.push(urls);
+    } catch {
+      list.push(...urls.split(",").map((s) => s.trim()));
+    }
+  }
+  if (primary) list.unshift(primary);
+  return [
+    ...new Set(
+      list
+        .map((u) => String(u || "").trim())
+        .filter(Boolean)
+    ),
+  ];
+}
+
 router.get("/stats", async (_req, res) => {
   try {
     const products = await query(`SELECT COUNT(*)::int AS n FROM products`);
@@ -146,8 +182,14 @@ function parseProductBody(body = {}) {
     moq: Math.max(1, parseInt(body.moq, 10) || 1),
     stock_status: String(body.stock_status || "In Stock").trim() || "In Stock",
     featured: body.featured === true || body.featured === "true" || body.featured === "on",
-    image_url: String(body.image_url || "").trim() || null,
     image_gradient: String(body.image_gradient || "steel").trim() || "steel",
+    ...(() => {
+      const image_urls = normalizeImageUrls(body.image_urls, body.image_url);
+      return {
+        image_url: image_urls[0] || null,
+        image_urls,
+      };
+    })(),
   };
 }
 
@@ -162,16 +204,19 @@ router.post("/products", async (req, res) => {
     if (data.error) return res.status(400).json({ error: data.error });
 
     const sku = data.sku || (await nextSku());
-    const image_url = data.image_url || "/products/steel-01.jpg";
+    const image_urls = data.image_urls.length
+      ? data.image_urls
+      : ["/products/steel-01.jpg"];
+    const image_url = image_urls[0];
 
     const { rows } = await query(
       `INSERT INTO products (
          category_id, sku, name, summary, details, material, finish,
          size_text, thickness, application, unit, price_inr, mrp_inr,
          gst_percent, moq, stock_status, rating, sold_count, featured,
-         image_gradient, image_url
+         image_gradient, image_url, image_urls
        ) VALUES (
-         $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,4.5,0,$17,$18,$19
+         $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,4.5,0,$17,$18,$19,$20::jsonb
        )
        RETURNING *`,
       [
@@ -194,6 +239,7 @@ router.post("/products", async (req, res) => {
         data.featured,
         data.image_gradient,
         image_url,
+        JSON.stringify(image_urls),
       ]
     );
 
@@ -213,19 +259,28 @@ router.put("/products/:id", async (req, res) => {
     const data = parseProductBody(req.body);
     if (data.error) return res.status(400).json({ error: data.error });
 
-    const existing = await query(`SELECT id, sku, image_url FROM products WHERE id = $1`, [id]);
+    const existing = await query(
+      `SELECT id, sku, image_url, image_urls FROM products WHERE id = $1`,
+      [id]
+    );
     if (!existing.rows[0]) return res.status(404).json({ error: "Product not found" });
 
     const sku = data.sku || existing.rows[0].sku;
-    const image_url = data.image_url || existing.rows[0].image_url;
+    const prevUrls = normalizeImageUrls(
+      existing.rows[0].image_urls,
+      existing.rows[0].image_url
+    );
+    const image_urls = data.image_urls.length ? data.image_urls : prevUrls;
+    const image_url = image_urls[0] || existing.rows[0].image_url;
 
     const { rows } = await query(
       `UPDATE products SET
          category_id=$1, sku=$2, name=$3, summary=$4, details=$5,
          material=$6, finish=$7, size_text=$8, thickness=$9, application=$10,
          unit=$11, price_inr=$12, mrp_inr=$13, gst_percent=$14, moq=$15,
-         stock_status=$16, featured=$17, image_gradient=$18, image_url=$19
-       WHERE id=$20
+         stock_status=$16, featured=$17, image_gradient=$18, image_url=$19,
+         image_urls=$20::jsonb
+       WHERE id=$21
        RETURNING *`,
       [
         data.category_id,
@@ -247,6 +302,7 @@ router.put("/products/:id", async (req, res) => {
         data.featured,
         data.image_gradient,
         image_url,
+        JSON.stringify(image_urls),
         id,
       ]
     );
@@ -275,17 +331,26 @@ router.delete("/products/:id", async (req, res) => {
 });
 
 router.post("/upload", (req, res) => {
-  upload.single("image")(req, res, (err) => {
+  upload.fields([
+    { name: "images", maxCount: 12 },
+    { name: "image", maxCount: 1 },
+  ])(req, res, (err) => {
     if (err) {
       return res.status(400).json({ error: err.message || "Upload failed" });
     }
-    if (!req.file) {
+    const files = [
+      ...(req.files?.images || []),
+      ...(req.files?.image || []),
+    ];
+    if (!files.length) {
       return res.status(400).json({ error: "No image uploaded" });
     }
+    const image_urls = files.map((f) => `/uploads/${f.filename}`);
     res.status(201).json({
       ok: true,
-      image_url: `/uploads/${req.file.filename}`,
-      filename: req.file.filename,
+      image_url: image_urls[0],
+      image_urls,
+      filename: files[0].filename,
     });
   });
 });

@@ -5,7 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import api from "./routes/api.js";
 import auth from "./routes/auth.js";
-import admin from "./routes/admin.js";
+import admin, { ensureProductImagesColumn } from "./routes/admin.js";
 import { ensureUsersTable } from "./auth.js";
 
 dotenv.config();
@@ -38,6 +38,9 @@ app.use("/api", api);
 
 ensureUsersTable().catch((err) => {
   console.error("Failed to ensure users table:", err.message);
+});
+ensureProductImagesColumn().catch((err) => {
+  console.error("Failed to ensure product images column:", err.message);
 });
 
 const clientDist = path.join(__dirname, "../../client/dist");
