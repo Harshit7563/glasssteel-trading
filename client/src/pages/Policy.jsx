@@ -129,6 +129,7 @@ export default function Policy() {
             "terms-of-use",
             "shipping-policy",
             "return-refund-policy",
+            "cancellation-policy",
           ].includes(slug) ? (
             <div className="policy-block">
               <h2>
@@ -138,7 +139,9 @@ export default function Policy() {
                     ? "Shipping support contact"
                     : slug === "return-refund-policy"
                       ? "Return & refund support"
-                      : "Company contact details"}
+                      : slug === "cancellation-policy"
+                        ? "Cancellation support"
+                        : "Company contact details"}
               </h2>
               <p>
                 <strong>Company:</strong>{" "}

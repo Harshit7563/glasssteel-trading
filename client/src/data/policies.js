@@ -1094,19 +1094,216 @@ export const policies = {
   },
   "cancellation-policy": {
     title: "Cancellation Policy",
-    updated: "9 September 2026",
+    effective: "19 June 2026",
+    updated: "19 June 2026",
+    website: "https://glasssteel.in/",
+    intro: [
+      "This Cancellation Policy applies to orders placed with GLASSTEEL TRADING (OPC) PRIVATE LIMITED (“GlassSteel”, “we”, “us”, or “our”) through https://glasssteel.in/ or our authorised sales channels.",
+      "Cancellation eligibility depends on the product type, order status, and whether production or dispatch has begun.",
+      "Please read this Policy together with our Terms of Use, Shipping & Dispatch Policy, Return & Refund Policy, and any transaction-specific conditions disclosed before purchase.",
+      "Nothing in this Policy excludes or restricts rights available under applicable law.",
+    ],
     sections: [
       {
-        heading: "Before dispatch",
-        body: "Orders can be cancelled before dispatch/production start. Any advance may be adjusted against future orders or refunded as per payment mode, after deducting bank/gateway charges if any.",
+        heading: "1. How to request cancellation",
+        body: "Send your cancellation request through one of the following authorised channels listed at the end of this page (support email or telephone / WhatsApp). Use the subject line: Cancellation Request – [Order or Enquiry Number]. Please include:",
+        list: [
+          "Your name and registered contact details.",
+          "Order, quotation, or invoice reference.",
+          "Products and quantities you wish to cancel.",
+          "Whether the request concerns the entire order or selected items.",
+          "Payment reference, where relevant.",
+        ],
+        paragraphs: [
+          "You may provide a reason to help us understand the request, but a reason is not mandatory for an otherwise eligible cancellation.",
+          "If you contact us by telephone, please also obtain a written reference or submit the request through an authorised written channel.",
+        ],
       },
       {
-        heading: "After production start",
-        body: "Made-to-order items once cut/fabricated cannot be cancelled. Ready-stock orders already handed to transporter cannot be cancelled; use the return process if eligible on delivery.",
+        heading: "2. Receipt and confirmation",
+        paragraphs: [
+          "We will check the order’s status and confirm the outcome in writing.",
+          "An acknowledgement confirms receipt of your request; it does not necessarily confirm that the order has been cancelled.",
+          "When assessing eligibility, we will consider the actual production or dispatch status when your request reached our authorised channel. A delay in our internal response will not, by itself, remove an otherwise available cancellation right.",
+          "Cancellation assessment target: within 1–2 business days during support hours (Monday to Saturday, 10:00–18:00 IST, excluding public holidays).",
+          "Our written response will explain which items have been cancelled, whether any items cannot be cancelled and why, any lawful previously disclosed charges, and the refundable amount with expected refund timeline.",
+        ],
       },
       {
-        heading: "How to cancel",
-        body: "Email sales@glassteel.in or WhatsApp the sales number with your enquiry/order reference. Cancellation is confirmed only in writing from GLASSTEEL.",
+        heading: "3. Requests before order acceptance",
+        paragraphs: [
+          "You may withdraw an order request before it has been accepted, subject to any separate service or work already expressly authorised.",
+          "If we have received payment for an order that is not accepted, we will refund the amount attributable to that unaccepted order.",
+          "An enquiry, quotation request, or automated payment acknowledgement does not itself establish order acceptance unless it expressly states otherwise.",
+          "The acceptance process described in our Terms of Use and order confirmation applies.",
+        ],
+      },
+      {
+        heading: "4. Ready-stock orders before dispatch",
+        paragraphs: [
+          "Ready-stock orders can generally be cancelled before they are handed over to the transporter or courier.",
+          "Creating a shipping label or allocating stock does not, by itself, mean that an order has been dispatched.",
+          "Please submit the request promptly so that we can stop packing or carrier collection where practical.",
+          "Any applicable cancellation charge must meet the requirements in Section 8. No undisclosed deduction will be introduced merely because an order has been packed.",
+        ],
+      },
+      {
+        heading: "5. Custom and made-to-order products",
+        body: "Custom orders may include cut-to-size glass, fabricated steel, special finishes, made-to-measure panels, and products manufactured to approved drawings or dimensions.",
+        subsections: [
+          {
+            heading: "Before production begins",
+            paragraphs: [
+              "Cancellation is generally available before cutting, fabrication, custom finishing, or other agreed production work begins.",
+              "If you separately authorised a paid service or a specific non-recoverable procurement commitment, any proposed adjustment must have been disclosed before authorisation and must be lawful, reasonable, and supported by an explanation.",
+            ],
+          },
+          {
+            heading: "After production begins",
+            paragraphs: [
+              "Change-of-mind cancellation may no longer be available once goods have been cut, fabricated, or otherwise customised to approved specifications.",
+              "If cancellation is still technically possible, we will explain the available options and any lawful financial consequences before agreeing on a settlement.",
+              "Approval of a drawing or payment of an advance does not, by itself, prove that production has started. Where relevant to a disputed request, we will explain the actual work stage.",
+            ],
+          },
+          {
+            heading: "Product or service failures",
+            body: "Restrictions on custom-order cancellation do not remove remedies for defects, incorrect specifications, non-delivery, or another failure for which a remedy is available under applicable law.",
+          },
+        ],
+      },
+      {
+        heading: "6. Orders already dispatched",
+        paragraphs: [
+          "Once goods have been handed over to the carrier, a normal pre-dispatch cancellation may no longer be possible.",
+          "We may attempt to stop or recall the shipment, but success depends on the carrier and shipment status.",
+          "If recall is possible, we will explain any applicable arrangements and lawful, previously disclosed costs.",
+          "If delivery proceeds, eligible claims will be handled under our Return & Refund Policy. Dispatch does not eliminate rights relating to defective goods, incorrect supply, qualifying delivery failures, or other legal remedies.",
+          "Please contact us before refusing a shipment so that we can coordinate handling, particularly for fragile or bulky materials. Refusal alone does not automatically complete a cancellation or justify forfeiture of the entire payment.",
+        ],
+      },
+      {
+        heading: "7. Partial cancellations and order changes",
+        paragraphs: [
+          "You may request cancellation of selected items or quantities where those parts of the order can reasonably be separated.",
+          "Custom production batches, bundled products, and quantity-dependent pricing may require additional assessment.",
+          "If a partial cancellation affects a previously disclosed discount or delivery charge, we will provide a revised calculation. Any adjustment must be fair, lawful, and consistent with the terms agreed before purchase.",
+          "Changes to dimensions, finish, material, quantity, or delivery location are modification requests. We will confirm whether the change can be accommodated and obtain agreement to any revised price or timeline.",
+          "We will not silently treat a modification request as authority to cancel and replace the entire order.",
+        ],
+      },
+      {
+        heading: "8. Cancellation charges and deductions",
+        body: "There is no automatic entitlement to retain an advance or deduct a fixed percentage merely because a cancellation has been requested. Any proposed cancellation charge or deduction must:",
+        list: [
+          "Be permitted by applicable law.",
+          "Have been clearly disclosed before purchase or the relevant separate authorisation.",
+          "Be reasonable and proportionate.",
+          "Be explained in writing.",
+          "Comply with applicable requirements concerning reciprocal cancellation charges.",
+        ],
+        paragraphs: [
+          "Where consumer e-commerce rules apply, we will not impose cancellation charges unless similar charges are also borne by us when we unilaterally cancel an order, as required by law.",
+          "Calling a deduction a processing, procurement, restocking, or payment-gateway fee does not exempt it from applicable legal requirements.",
+          "Bank or payment-gateway costs will not automatically be passed on to you simply because a provider charges us.",
+          "Where cancellation arises from our inability to fulfil the order or another failure for which we are responsible, we will not deduct customer cancellation charges.",
+        ],
+      },
+      {
+        heading: "9. Advances and deposits",
+        paragraphs: [
+          "An advance forms part of the payment for your order. It is not automatically non-refundable.",
+          "For an approved cancellation, we will calculate the refundable balance after only those adjustments that are expressly agreed and legally permissible.",
+          "We will provide an itemised explanation of any retained amount.",
+          "Adjustment of an advance against a future purchase or conversion to store credit is optional and requires your agreement. It will not replace a monetary refund to which you are entitled.",
+        ],
+      },
+      {
+        heading: "10. Cancellation by GlassSteel",
+        body: "We may need to decline or cancel an order where, for example:",
+        list: [
+          "The product is unavailable and cannot be sourced within an acceptable timeframe.",
+          "Delivery to the requested location is not feasible.",
+          "Required specifications cannot be fulfilled.",
+          "Payment remains incomplete after appropriate notice.",
+          "There is a substantiated concern about fraud or an unlawful transaction.",
+          "A legal restriction prevents fulfilment.",
+        ],
+        paragraphs: [
+          "We will explain the reason where legally permitted and refund amounts due for goods or services that will not be supplied.",
+          "We will not cancel an accepted order merely to impose a higher price without a lawful basis.",
+          "If an error is identified before acceptance, we may offer corrected terms. You may decline those terms and receive the applicable refund.",
+          "Any additional remedy or reciprocal cancellation obligation required by law remains available.",
+        ],
+      },
+      {
+        heading: "11. Delays and non-fulfilment",
+        body: "If an order is materially delayed, we will communicate the updated position and available options. These may include:",
+        list: [
+          "Continuing with a revised delivery date.",
+          "Cancelling the affected unfulfilled items.",
+          "Accepting an alternative product with your agreement.",
+          "Receiving a refund where applicable.",
+        ],
+        paragraphs: [
+          "A ready-stock item will not be reclassified as made-to-order after purchase to remove an existing cancellation right.",
+          "Events beyond reasonable control may affect fulfilment, but they do not automatically permit indefinite delay or eliminate refund obligations. The order terms and applicable law will determine the available remedy.",
+        ],
+      },
+      {
+        heading: "12. Refund method and timeline",
+        paragraphs: [
+          "For an approved cancellation that does not require recovery of dispatched goods, we ordinarily process the refund within 7–14 business days after confirming the cancellation and refundable amount.",
+          "Where goods must first be recalled or returned, the relevant process and timeline in our Return & Refund Policy will apply, subject to applicable law. We will not require return of goods you never received.",
+          "Any shorter mandatory refund timeline takes precedence.",
+          "Refunds will normally be made to the original payment method. If that is unavailable, we will agree on a suitable alternative, such as a verified bank transfer.",
+          "We will provide available refund confirmation or a transaction reference after initiation. Your bank or payment provider may require additional time to display the credit.",
+          "Business days for this Policy are Monday to Saturday, excluding applicable public holidays.",
+        ],
+      },
+      {
+        heading: "13. Refund calculation",
+        paragraphs: [
+          "The refund will reflect the amount actually paid for the cancelled portion, including applicable taxes, less only lawful adjustments under this Policy.",
+          "For a fully cancelled order before dispatch, delivery charges for a service not provided will ordinarily also be refunded, subject to any separately authorised and lawful costs.",
+          "For partial cancellations, shared charges and discounts will be allocated fairly and explained.",
+          "No refund will exceed the amount paid for the relevant cancelled goods or services, except where additional compensation or another remedy is required by law.",
+        ],
+      },
+      {
+        heading: "14. Duplicate orders and payments",
+        paragraphs: [
+          "If you accidentally place duplicate orders, contact us promptly and identify which order should remain active.",
+          "Each order will be assessed according to its actual production and dispatch status.",
+          "A verified duplicate payment for the same order will be reconciled and refunded as an excess payment. It will not be treated as a cancellation that automatically attracts a fee.",
+        ],
+      },
+      {
+        heading: "15. Business, dealer, and project orders",
+        paragraphs: [
+          "Bulk or project orders may include negotiated cancellation provisions in a written agreement or accepted quotation.",
+          "These provisions must be disclosed and agreed before the relevant commitment is made and remain subject to applicable law.",
+          "A company name or GSTIN on an invoice does not, by itself, determine whether statutory consumer protections apply.",
+        ],
+      },
+      {
+        heading: "16. Complaints and escalation",
+        paragraphs: [
+          "For cancellation assistance, contact GLASSTEEL TRADING (OPC) PRIVATE LIMITED using the support email and telephone / WhatsApp shown at the end of this page.",
+          "Support hours: Monday to Saturday, 10:00–18:00 IST (excluding public holidays).",
+          "If the matter remains unresolved, escalate using the same support email with the subject line “Cancellation Grievance” and include your order or enquiry reference.",
+          "Where the Consumer Protection (E-Commerce) Rules apply, consumer complaints will be acknowledged within 48 hours and redressed within one month of receipt.",
+          "This grievance timeline does not extend a shorter refund deadline.",
+          "You retain the right to approach the National Consumer Helpline, a competent Consumer Commission, or another authority available under applicable law.",
+        ],
+      },
+      {
+        heading: "17. Policy updates",
+        paragraphs: [
+          "We may update this Policy to reflect changes in our operations or legal requirements.",
+          "The version disclosed and agreed when your order was accepted will apply to that order, unless a subsequent change is mutually agreed or required by law.",
+          "The latest version will be published on this page with an updated date.",
+        ],
       },
     ],
   },
