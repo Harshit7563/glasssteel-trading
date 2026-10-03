@@ -1805,15 +1805,224 @@ export const policies = {
   },
   "cookie-policy": {
     title: "Cookie Policy",
-    updated: "9 September 2026",
+    effective: "19 June 2026",
+    updated: "19 June 2026",
+    website: "https://glasssteel.in/",
+    intro: [
+      "This Cookie Policy explains how GLASSTEEL TRADING (OPC) PRIVATE LIMITED (“GlassSteel”, “we”, “us”, or “our”) uses cookies and similar technologies on https://glasssteel.in/.",
+      "It describes their purposes, how long they remain active, and the choices available to you.",
+      "Please read this Policy together with our Privacy Policy, which explains how we handle personal information, including information collected through website technologies.",
+    ],
     sections: [
       {
-        heading: "What we use",
-        body: "We may use essential cookies and similar storage to keep sessions secure, remember language/preferences, and measure aggregate traffic so we can improve the platform.",
+        heading: "1. What are cookies?",
+        paragraphs: [
+          "Cookies are small text files that a website places in your browser. They help the website recognise a browser session, remember selected settings, and support particular features.",
+          "A cookie may contain an identifier or preference rather than your name. However, identifiers and associated information can still constitute personal information where they identify or relate to an individual.",
+          "Cookies do not give us unrestricted access to files on your device.",
+        ],
       },
       {
-        heading: "Your choice",
-        body: "You can block non-essential cookies in your browser settings. Essential cookies required for basic site function may still apply.",
+        heading: "2. Similar technologies",
+        body: "Website functions may also use technologies such as:",
+        list: [
+          "Local storage: Stores information in your browser, potentially until it is removed by the website or you.",
+          "Session storage: Stores information for a browser tab’s session.",
+          "Pixels and tags: Can send information about page views or interactions to the provider operating them.",
+          "Server logs: Record requests made to the website, potentially including IP addresses, timestamps, and browser information.",
+        ],
+        note: "Server logs are not cookies, and browser cookie settings do not necessarily prevent this separate processing. Only technologies actually deployed on our website appear in the inventory below.",
+      },
+      {
+        heading: "3. First-party and third-party technologies",
+        paragraphs: [
+          "First-party cookies are associated with the website you are visiting.",
+          "Third-party cookies are associated with another domain, such as a provider whose service is embedded in the page.",
+          "Third-party services can also receive information without setting a third-party cookie. For example, loading an embedded resource can disclose technical connection information to its provider.",
+          "The inventory identifies relevant providers and purposes.",
+        ],
+      },
+      {
+        heading: "4. Categories and purposes",
+        body: "The following categories explain how website storage and tracking technologies may be classified. Our inventory identifies which categories are actually used.",
+        subsections: [
+          {
+            heading: "4.1 Strictly necessary",
+            body: "These support functions needed to provide the website or a service you request, such as:",
+            list: [
+              "Maintaining a secure login session.",
+              "Protecting forms and accounts against misuse.",
+              "Supporting an active checkout or shopping session, where available.",
+              "Recording cookie consent choices.",
+            ],
+            paragraphs: [
+              "A technology is not treated as strictly necessary merely because it is useful to our business.",
+            ],
+          },
+          {
+            heading: "4.2 Functional and preference",
+            body: "These remember optional choices, such as a selected delivery setting or display preference, where the feature is available. Whether a particular preference technology is necessary or optional depends on its purpose and how the feature operates.",
+          },
+          {
+            heading: "4.3 Analytics and performance",
+            paragraphs: [
+              "If enabled, these help us understand page usage, navigation, errors, or performance.",
+              "Analytics tools currently used: None.",
+            ],
+          },
+          {
+            heading: "4.4 Advertising and marketing",
+            paragraphs: [
+              "If enabled, these may support campaign measurement, advertising audiences, or personalised advertising.",
+              "Advertising tools currently used: None.",
+              "Do not assume that advertising technologies are used simply because this category is described.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "5. Cookie and storage inventory",
+        body: "The following inventory describes the technologies actually used on our website as of the verification date.",
+        table: {
+          headers: [
+            "Cookie or storage key",
+            "Provider / domain",
+            "Purpose and information involved",
+            "Category",
+            "Duration",
+          ],
+          rows: [
+            [
+              "glassteel_token (local storage)",
+              "GlassSteel / glasssteel.in",
+              "Stores the signed-in account authentication token so login persists across page visits; used for API authorisation",
+              "Necessary",
+              "Until logout or you clear site data",
+            ],
+            [
+              "Server access / error logs",
+              "GlassSteel hosting (India)",
+              "Records requests to operate and secure the website (IP, timestamp, browser/user-agent, requested URL, status codes)",
+              "Necessary (server processing)",
+              "Generally 90–180 days per Privacy Policy",
+            ],
+            [
+              "Google Fonts stylesheet / font files",
+              "Google (fonts.googleapis.com, fonts.gstatic.com)",
+              "Loads display fonts; the browser connection may disclose IP address and device/browser information to Google",
+              "Functional (embedded resource)",
+              "Browser / CDN cache per Google defaults",
+            ],
+          ],
+        },
+        paragraphs: [
+          "Inventory last verified: 19 June 2026.",
+          "We do not currently set advertising or analytics cookies. We do not currently operate a third-party advertising pixel.",
+          "Google Fonts provider notices: https://policies.google.com/privacy",
+        ],
+      },
+      {
+        heading: "6. Information collected",
+        body: "Depending on the technologies listed above, information may include:",
+        list: [
+          "Browser or session identifiers.",
+          "Login or security session status.",
+          "Saved preferences.",
+          "Pages visited and interaction events.",
+          "Browser, operating system, and device characteristics.",
+          "Referral information.",
+          "IP address and approximate location derived from it.",
+          "Consent selections and the time those selections were recorded.",
+        ],
+        paragraphs: [
+          "The inventory and our Privacy Policy explain the applicable purposes.",
+          "Information collected through these technologies will not be used for a materially different purpose without an appropriate notice and consent where required.",
+        ],
+      },
+      {
+        heading: "7. Consent and optional technologies",
+        paragraphs: [
+          "Where consent is required, optional technologies will not be activated until you have made the relevant choice.",
+          "Merely visiting the website, scrolling, or closing a notice does not constitute affirmative consent to optional tracking.",
+          "Website consent controls: GlassSteel does not currently deploy optional analytics or advertising cookies, so no cookie-consent banner is shown for those categories. The login token in local storage is used only when you sign in and is treated as necessary for that account service.",
+          "Rejecting optional technologies should not prevent access to core services. Clearing or blocking necessary storage may prevent login from persisting.",
+        ],
+      },
+      {
+        heading: "8. Changing or withdrawing your choice",
+        paragraphs: [
+          "Because optional analytics and advertising cookies are not currently used, there is no separate cookie-preferences panel for those categories.",
+          "You can end a login session by using Logout on the website, which removes glassteel_token from local storage.",
+          "You may also clear site data for glasssteel.in through your browser settings.",
+          "Withdrawing consent stops future consent-based activity for the affected purpose. It does not automatically erase information already collected lawfully.",
+          "Existing server-side information is handled under our Privacy Policy and applicable retention requirements.",
+          "You may contact us for assistance with a privacy or deletion request.",
+        ],
+      },
+      {
+        heading: "9. Browser controls",
+        body: "Most browsers allow you to:",
+        list: [
+          "View and delete stored cookies.",
+          "Block cookies for particular websites.",
+          "Restrict third-party cookies.",
+          "Clear local website data.",
+          "Remove stored data when closing the browser.",
+        ],
+        paragraphs: [
+          "The available controls differ by browser and device.",
+          "Blocking necessary storage may prevent login, disrupt an active session, or affect other requested functions.",
+          "Private browsing does not make all activity anonymous or necessarily prevent information from being sent to us or a third-party provider.",
+        ],
+      },
+      {
+        heading: "10. How long information is stored",
+        paragraphs: [
+          "Some cookies are intended to last for a session. Others remain until their stated expiry or until deleted. Browser session-restoration features may affect how session information is retained.",
+          "Local storage may remain until cleared unless the website implements an expiry or removal process. On GlassSteel, glassteel_token remains until logout or manual clearing.",
+          "The inventory lists the relevant durations. A cookie’s expiry does not necessarily determine how long related information is retained on a server.",
+          "Server-side retention is described in our Privacy Policy and applicable provider notices.",
+        ],
+      },
+      {
+        heading: "11. Third-party links and embedded services",
+        paragraphs: [
+          "Our website may link to external payment services, social platforms, or other websites.",
+          "Following an external link may result in cookies or other processing governed by that destination’s policy.",
+          "Where third-party services are embedded directly on GlassSteel, we identify their relevant use in this Policy and manage their activation according to applicable requirements.",
+          "Currently, Google Fonts is loaded as an embedded resource for typography. We do not claim that all third-party processing is outside our responsibility merely because an external provider is involved.",
+        ],
+      },
+      {
+        heading: "12. Sharing and processing locations",
+        paragraphs: [
+          "Information collected through a listed technology may be processed by us or the identified provider for its disclosed purpose.",
+          "Primary website hosting and server logs are processed on our production infrastructure in India, as described in our Privacy Policy.",
+          "Google Fonts requests may be processed by Google according to Google’s privacy notice and may involve processing outside India.",
+          "Provider involvement, relevant sharing, and processing outside India, where applicable, are also explained in our Privacy Policy.",
+        ],
+      },
+      {
+        heading: "13. Your privacy requests",
+        paragraphs: [
+          "You may contact us about cookie-related personal information, including requests to access, correct, or delete information, withdraw consent, or raise a complaint, subject to applicable law.",
+          "We may need limited information to identify the relevant record or verify your request.",
+          "Please do not email authentication cookies, session tokens, passwords, or unredacted browser exports. These may allow access to your account.",
+        ],
+      },
+      {
+        heading: "14. Policy changes",
+        paragraphs: [
+          "We may update this Policy when we change providers, introduce technologies, or revise our practices.",
+          "The updated version will display a revised date. Where a change requires fresh consent, updating this page alone will not substitute for obtaining that consent.",
+        ],
+      },
+      {
+        heading: "15. Contact us",
+        paragraphs: [
+          "For cookie or privacy queries, contact GLASSTEEL TRADING (OPC) PRIVATE LIMITED using the privacy email and telephone shown at the end of this page.",
+          "Please use the subject line “Cookie or Privacy Query” and describe the issue, browser, and relevant page without including sensitive account information.",
+        ],
       },
     ],
   },
