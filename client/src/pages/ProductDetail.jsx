@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link, useOutletContext, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import ProductCard from "../components/ProductCard";
-import { discountPercent, inr, whatsappLink } from "../utils";
+import { discountPercent, inr } from "../utils";
 
 export default function ProductDetail() {
   const { id } = useParams();
-  const { company } = useOutletContext();
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
@@ -48,11 +47,6 @@ export default function ProductDetail() {
 
   const p = data.product;
   const off = discountPercent(p.price_inr, p.mrp_inr);
-  const phone = company?.phone || "+91 98765 43210";
-  const wa = whatsappLink(
-    phone,
-    `Namaste, I want details/quote for ${p.sku} — ${p.name} (₹${Number(p.price_inr)}/${p.unit} incl. GST).`
-  );
 
   return (
     <section className="section detail-section" style={{ paddingTop: 0 }}>
@@ -139,9 +133,6 @@ export default function ProductDetail() {
               <Link className="btn btn-primary" to={`/pay/${p.id}`}>
                 ADD
               </Link>
-              <a className="btn btn-dark" href={wa} target="_blank" rel="noreferrer">
-                WhatsApp quote
-              </a>
               <Link
                 className="btn btn-outline"
                 to={`/contact?category=${p.category_slug}`}
