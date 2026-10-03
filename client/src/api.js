@@ -8,7 +8,9 @@ export function setAuthToken(token) {
 
 async function request(path, options = {}) {
   const headers = {
-    "Content-Type": "application/json",
+    ...(options.body instanceof FormData
+      ? {}
+      : { "Content-Type": "application/json" }),
     ...(options.headers || {}),
   };
   if (authToken) {
@@ -62,4 +64,30 @@ export const api = {
       body: JSON.stringify(body),
     }),
   me: () => request("/api/auth/me"),
+  adminStats: () => request("/api/admin/stats"),
+  adminProducts: (params = {}) => {
+    const qs = new URLSearchParams(
+      Object.fromEntries(
+        Object.entries(params).filter(([, v]) => v !== undefined && v !== "")
+      )
+    ).toString();
+    return request(`/api/admin/products${qs ? `?${qs}` : ""}`);
+  },
+  adminCreateProduct: (body) =>
+    request("/api/admin/products", {
+      method: "POST",
+      body: JSON.stringify(body),
+    }),
+  adminUpdateProduct: (id, body) =>
+    request(`/api/admin/products/${id}`, {
+      method: "PUT",
+      body: JSON.stringify(body),
+    }),
+  adminDeleteProduct: (id) =>
+    request(`/api/admin/products/${id}`, { method: "DELETE" }),
+  adminUploadImage: (file) => {
+    const form = new FormData();
+    form.append("image", file);
+    return request("/api/admin/upload", { method: "POST", body: form });
+  },
 };

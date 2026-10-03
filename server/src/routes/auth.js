@@ -37,9 +37,9 @@ router.post("/register", async (req, res) => {
 
     const password_hash = await hashPassword(password);
     const { rows } = await query(
-      `INSERT INTO users (name, email, phone, password_hash)
-       VALUES ($1, $2, $3, $4)
-       RETURNING id, name, email, phone, created_at`,
+      `INSERT INTO users (name, email, phone, password_hash, role)
+       VALUES ($1, $2, $3, $4, 'customer')
+       RETURNING id, name, email, phone, role, created_at`,
       [name.trim(), emailNorm, phone?.trim() || null, password_hash]
     );
 
@@ -62,7 +62,7 @@ router.post("/login", async (req, res) => {
     }
 
     const { rows } = await query(
-      `SELECT id, name, email, phone, password_hash, created_at
+      `SELECT id, name, email, phone, role, password_hash, created_at
        FROM users WHERE email = $1`,
       [email.trim().toLowerCase()]
     );
@@ -89,7 +89,7 @@ router.get("/me", authRequired, async (req, res) => {
   try {
     await ensureUsersTable();
     const { rows } = await query(
-      `SELECT id, name, email, phone, created_at FROM users WHERE id = $1`,
+      `SELECT id, name, email, phone, role, created_at FROM users WHERE id = $1`,
       [req.user.id]
     );
     if (!rows[0]) {

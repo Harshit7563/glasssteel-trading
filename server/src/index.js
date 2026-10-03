@@ -5,6 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import api from "./routes/api.js";
 import auth from "./routes/auth.js";
+import admin from "./routes/admin.js";
 import { ensureUsersTable } from "./auth.js";
 
 dotenv.config();
@@ -24,13 +25,15 @@ app.use(
     origin: CLIENT_ORIGINS,
   })
 );
-app.use(express.json());
+app.use(express.json({ limit: "2mb" }));
 
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true, service: "glassteel-api" });
 });
 
+app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 app.use("/api/auth", auth);
+app.use("/api/admin", admin);
 app.use("/api", api);
 
 ensureUsersTable().catch((err) => {
@@ -40,7 +43,7 @@ ensureUsersTable().catch((err) => {
 const clientDist = path.join(__dirname, "../../client/dist");
 app.use(express.static(clientDist));
 app.get("*", (req, res, next) => {
-  if (req.path.startsWith("/api")) return next();
+  if (req.path.startsWith("/api") || req.path.startsWith("/uploads")) return next();
   res.sendFile(path.join(clientDist, "index.html"), (err) => {
     if (err) next();
   });

@@ -10,6 +10,8 @@ import Contact from "./pages/Contact.jsx";
 import Policy from "./pages/Policy.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
+import AdminGuard from "./pages/admin/AdminGuard.jsx";
+import AdminProducts from "./pages/admin/AdminProducts.jsx";
 
 export default function Router() {
   return (
@@ -26,6 +28,9 @@ export default function Router() {
           <Route path="policies/:slug" element={<Policy />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="admin" element={<AdminGuard />}>
+            <Route index element={<AdminProducts />} />
+          </Route>
         </Route>
       </Routes>
     </>

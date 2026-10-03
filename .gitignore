@@ -9,6 +9,8 @@ client/dist/
 server/node_modules/
 client/node_modules/
 server/.env
+server/uploads/*
+!server/uploads/.gitkeep
 *.pem
 *.key
 .idea/

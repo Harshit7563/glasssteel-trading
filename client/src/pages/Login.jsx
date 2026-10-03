@@ -3,7 +3,7 @@ import { Link, Navigate, useNavigate, useSearchParams } from "react-router-dom";
 import { useAuth } from "../auth";
 
 export default function Login() {
-  const { login, isLoggedIn, loading } = useAuth();
+  const { login, isLoggedIn, isAdmin, loading } = useAuth();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const redirect = searchParams.get("redirect") || "/";
@@ -12,7 +12,11 @@ export default function Login() {
   const [busy, setBusy] = useState(false);
 
   if (!loading && isLoggedIn) {
-    return <Navigate to={redirect} replace />;
+    const dest =
+      isAdmin && (redirect === "/" || redirect.startsWith("/admin"))
+        ? "/admin"
+        : redirect;
+    return <Navigate to={dest} replace />;
   }
 
   async function onSubmit(e) {
@@ -20,8 +24,12 @@ export default function Login() {
     setBusy(true);
     setError("");
     try {
-      await login(form.email, form.password);
-      navigate(redirect);
+      const user = await login(form.email, form.password);
+      if (user?.role === "admin") {
+        navigate(redirect.startsWith("/admin") ? redirect : "/admin");
+      } else {
+        navigate(redirect);
+      }
     } catch (err) {
       setError(err.message || "Login failed");
     } finally {
