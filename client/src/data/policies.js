@@ -336,23 +336,248 @@ export const policies = {
   },
   "terms-of-use": {
     title: "Terms of Use",
-    updated: "9 September 2026",
+    effective: "19 June 2026",
+    updated: "19 June 2026",
+    website: "https://glasssteel.in/",
+    intro: [
+      "Welcome to GlassSteel, accessible at https://glasssteel.in/ and operated by GLASSTEEL TRADING (OPC) PRIVATE LIMITED (“GlassSteel”, “Company”, “we”, “us”, or “our”).",
+      "These Terms govern your use of our website and, where applicable, enquiries, quotations, accounts, and purchases made through our sales channels.",
+      "“You” or “customer” means the individual using our services or the organisation that the individual is authorised to represent.",
+    ],
     sections: [
       {
-        heading: "Platform use",
-        body: "GLASSTEEL TRADING (OPC) PRIVATE LIMITED operates this website as a B2B/B2C trading catalogue for building interiors, home interiors, and steel & antique glass. By using the site you agree to these terms and all linked policies.",
+        heading: "1. Scope and acceptance",
+        paragraphs: [
+          "Please read these Terms before creating an account, submitting an order, or accepting a quotation.",
+          "When you place an order or accept a quotation, you agree to the terms presented to you for that transaction. We will obtain your affirmative acceptance where required by law.",
+          "Our Privacy Policy explains how we process personal information. Transaction-specific policies, including our Shipping & Dispatch, Return & Refund, Cancellation, GST & Pricing, and Warranty Policies, apply where relevant and disclosed before purchase.",
+          "Nothing in these Terms excludes or restricts rights or remedies that cannot lawfully be excluded, including applicable consumer rights.",
+        ],
       },
       {
-        heading: "Product information",
-        body: "Prices, stock status, sizes, and finishes are indicative and may change without prior notice. Final commercial terms are confirmed only on written quotation / tax invoice. Images and swatches are illustrative.",
+        heading: "2. Company information",
+        paragraphs: [
+          "Legal Name: GLASSTEEL TRADING (OPC) PRIVATE LIMITED.",
+          "Registered office, customer support email, and telephone are shown at the end of this page and on our Contact page.",
+          "CIN and GSTIN will be stated on the applicable Proforma Invoice / tax invoice for your transaction. The seller responsible for your transaction will be identified in the applicable order confirmation and invoice.",
+        ],
       },
       {
-        heading: "Accountable use",
-        body: "You agree not to misuse the platform, scrape catalogue data at abusive scale, submit false enquiries, or attempt unauthorised access to our systems.",
+        heading: "3. Eligibility and business authority",
+        paragraphs: [
+          "You must be at least 18 years old and legally capable of entering into a binding contract to place orders or create a purchasing account.",
+          "If you act for a company, partnership, contractor, dealer, or other organisation, you confirm that you are authorised to accept the relevant terms and place orders on its behalf.",
+          "You must provide accurate contact, billing, delivery, and tax information.",
+        ],
       },
       {
-        heading: "Liability",
-        body: "To the maximum extent permitted by law, GLASSTEEL is not liable for indirect or consequential losses arising from use of catalogue information. Product suitability for site conditions remains the buyer’s / specifier’s responsibility.",
+        heading: "4. Our products and services",
+        paragraphs: [
+          "GlassSteel offers a catalogue of products that may include building interiors, home interiors, steel and antique glass, steel kitchenware, home décor, interior hardware, and exterior materials.",
+          "Products may be available from stock, procured against an order, or manufactured to approved specifications.",
+          "Unless expressly included in the accepted quotation or order confirmation, the purchase price does not include services such as site surveys, structural design, installation, fabrication, unloading, lifting, or commissioning.",
+          "Any additional services and charges must be disclosed and agreed before they are provided.",
+        ],
+      },
+      {
+        heading: "5. Accounts and security",
+        paragraphs: [
+          "Where account registration is available, you are responsible for keeping your account information accurate and protecting your login credentials.",
+          "Notify us promptly if you suspect unauthorised access or activity.",
+          "We may take proportionate steps to protect an account or suspend access where there is a reasonable concern about fraud, security, or a material breach of these Terms. Where appropriate and legally permitted, we will provide notice and an opportunity to resolve the issue.",
+          "Account suspension does not remove your rights relating to existing orders, refunds, complaints, or personal information.",
+        ],
+      },
+      {
+        heading: "6. Product descriptions and images",
+        paragraphs: [
+          "We aim to provide accurate descriptions, dimensions, materials, finishes, prices, and availability information.",
+          "Product photographs and digital swatches may differ slightly from physical products because of lighting, screen settings, natural material characteristics, or disclosed manufacturing tolerances.",
+          "Such variations do not permit us to supply products that materially differ from the agreed description or specifications.",
+          "Before ordering, review relevant details, including:",
+        ],
+        list: [
+          "Product code and model.",
+          "Material grade and thickness.",
+          "Dimensions and measurement units.",
+          "Finish, colour, or texture.",
+          "Quantity and minimum order requirements.",
+          "Price basis, such as per piece, set, sheet, or square foot.",
+          "Installation requirements and stated limitations.",
+          "Included accessories and warranty coverage.",
+        ],
+        note: "Where a specification is important to your intended use, obtain written confirmation before ordering.",
+      },
+      {
+        heading: "7. Measurements, samples, and custom orders",
+        paragraphs: [
+          "For custom, cut-to-size, fabricated, or made-to-order products, the accepted order should identify the approved dimensions, drawings, materials, finishes, tolerances, quantities, and production requirements.",
+          "If you provide measurements or drawings, you are responsible for their accuracy. If we undertake measurement or design services, our responsibility for those services will be stated in the agreed scope.",
+          "Production may begin only after the approvals and payments specified in the accepted order.",
+          "Changes requested after approval may affect price, material availability, and delivery dates. We will explain any proposed adjustment and obtain your agreement before implementing it.",
+          "Restrictions on change-of-mind cancellations or returns for customised goods must be disclosed before purchase. They do not remove remedies for defects, damage, incorrect supply, or failure to meet agreed specifications.",
+        ],
+      },
+      {
+        heading: "8. Quotations and order acceptance",
+        paragraphs: [
+          "Submitting an enquiry or requesting a quotation does not create an obligation to purchase.",
+          "A quotation is valid for the period stated in it and is subject to its disclosed conditions.",
+          "An automated receipt or payment acknowledgement confirms receipt only, unless it expressly states that the order has been accepted.",
+          "Our order acceptance process: an order is accepted when we issue a written order confirmation, Proforma Invoice accepted by you with the required payment/advance, or a tax invoice for the goods — whichever first confirms acceptance for that transaction.",
+          "Before acceptance, we may need to confirm availability, specifications, delivery serviceability, payment status, or other relevant details.",
+          "If we cannot accept an order, we will notify you and return any payment received for the unaccepted goods or services within the applicable refund timeline.",
+          "Once accepted, material changes to the order require mutual agreement, except where applicable law provides otherwise.",
+        ],
+      },
+      {
+        heading: "9. Prices, GST, and additional charges",
+        paragraphs: [
+          "Prices are stated in Indian Rupees unless expressly indicated otherwise.",
+          "Retail catalogue prices displayed as “Incl. GST” include applicable GST. Any quotation must clearly identify the tax treatment and total amount payable.",
+          "Delivery, handling, installation, customisation, and other applicable charges will be disclosed before you confirm the transaction.",
+          "Bulk or dealer pricing may depend on quantity, specifications, delivery location, payment terms, and quotation validity.",
+          "Price changes apply to future purchases and do not automatically change the agreed price of an accepted order.",
+          "If we identify a genuine pricing or description error before acceptance, we will explain the correction and allow you to accept the revised offer or cancel for a refund. We will not impose an additional charge without your agreement.",
+        ],
+      },
+      {
+        heading: "10. Payment",
+        paragraphs: [
+          "Available payment methods and payment schedules will be shown at checkout or stated in the accepted quotation. Current channels include merchant UPI and authorised bank transfer against Proforma Invoice details confirmed for your order.",
+          "An order may require full payment, an advance, or agreed milestone payments. Credit terms apply only if expressly approved in writing.",
+          "Payments should be made only through the authorised payment channels or beneficiary details confirmed for your order.",
+          "Do not share banking passwords, card PINs, CVV codes, UPI PINs, or payment authorisation OTPs with our staff.",
+          "If a payment remains overdue, we may pause the affected procurement, production, or dispatch after notifying you, subject to the agreed terms and applicable law.",
+          "An ordinary bank transfer is not an escrow arrangement. Escrow protection applies only where a separate, documented arrangement identifies the provider and release conditions.",
+        ],
+      },
+      {
+        heading: "11. Delivery and dispatch",
+        paragraphs: [
+          "Delivery availability, charges, estimated timelines, and any access requirements will be communicated before order confirmation.",
+          "Unless expressly guaranteed, delivery dates are estimates. If a material delay occurs, we will inform you and explain the available options.",
+          "You must provide an accurate address, contact number, and any relevant information about site access or delivery restrictions.",
+          "For bulky or fragile materials, unloading equipment, labour, floor access, and storage arrangements must be agreed where required. Any extra charge arising from delivery arrangements must be disclosed and justified.",
+          "Split deliveries or product substitutions require your agreement where they materially affect the order.",
+          "Delivery and transit responsibilities are governed by the accepted order, our Shipping & Dispatch Policy, and applicable law. Handing goods to a carrier does not, by itself, remove our legal obligations to you.",
+        ],
+      },
+      {
+        heading: "12. Inspection and delivery issues",
+        paragraphs: [
+          "Please inspect delivered goods as soon as reasonably possible and report visible damage, shortages, or incorrect items promptly.",
+          "Photographs of the product, packaging, and delivery label can help us investigate. Retain packaging where reasonably practical.",
+          "A delivery signature confirms receipt and does not automatically waive a claim for hidden damage, defects, or non-conforming goods.",
+          "An unboxing video may assist investigation but is not the sole acceptable evidence of a valid claim.",
+          "Do not install or use goods with an apparent defect where doing so could cause injury or worsen the damage.",
+        ],
+      },
+      {
+        heading: "13. Cancellations, returns, and refunds",
+        paragraphs: [
+          "Our Cancellation and Return & Refund Policies explain the applicable process, eligibility, timelines, and collection arrangements.",
+          "Change-of-mind returns may be subject to disclosed conditions, particularly for customised products. These conditions do not override applicable rights concerning defective, misdescribed, spurious, incorrectly supplied, or otherwise non-conforming goods.",
+          "Cancellation charges, if any, must be disclosed in advance and comply with applicable law, including restrictions concerning reciprocal cancellation charges.",
+          "If we cancel an order we cannot fulfil, we will explain the reason and refund the relevant amount. Any additional remedy required by law remains available.",
+          "Approved refunds will be processed through the original payment method where feasible, or another method agreed with you. Store credit will not replace a monetary refund you are legally entitled to without your agreement.",
+          "Refund processing timeline: approved refunds are ordinarily completed within 7–14 business days after goods reach our warehouse and pass QC (or after cancellation confirmation where goods were not dispatched), consistent with our Return & Refund Policy.",
+        ],
+      },
+      {
+        heading: "14. Warranty and product suitability",
+        paragraphs: [
+          "Warranty coverage varies by product and will be described in the applicable product information, warranty document, or accepted order.",
+          "A commercial warranty is additional to rights available under applicable law.",
+          "Damage caused by misuse, unauthorised modification, improper storage, or incorrect installation may fall outside a commercial warranty where the exclusion is disclosed and relevant to the damage.",
+          "For structural, façade, glazing, load-bearing, fire-rated, or other safety-critical uses, suitability must be assessed against the project requirements and applicable standards by a qualified professional.",
+          "We remain responsible for the accuracy of specifications and suitability commitments we expressly provide, and for obligations imposed by law.",
+        ],
+      },
+      {
+        heading: "15. Acceptable website use",
+        body: "You must not:",
+        list: [
+          "Submit fraudulent orders, false identities, or misleading payment confirmations.",
+          "Attempt unauthorised access to accounts or systems.",
+          "Upload malware or interfere with website security.",
+          "Use automated requests that materially disrupt the service.",
+          "Copy or exploit protected catalogue content without permission.",
+          "Submit unlawful, threatening, defamatory, or infringing material.",
+          "Use our services to facilitate unlawful activity.",
+        ],
+        note: "We may investigate misuse and take proportionate action consistent with applicable law.",
+      },
+      {
+        heading: "16. Intellectual property and submitted materials",
+        paragraphs: [
+          "Website branding, original text, designs, and other protected materials belong to GlassSteel or their respective owners.",
+          "You may view and use catalogue information for legitimate product evaluation and purchasing. This does not grant permission to republish or commercially exploit protected content.",
+          "You retain ownership of drawings, photographs, and other materials you provide. You grant us permission to use them only as reasonably necessary to evaluate your enquiry, prepare a quotation, fulfil your order, and provide related support.",
+          "Separate permission will be sought before using confidential project materials for unrelated publicity.",
+        ],
+      },
+      {
+        heading: "17. Third-party services",
+        paragraphs: [
+          "Our website may link to payment providers, manufacturers, or other external services.",
+          "Those services may have their own terms and privacy notices. We are not responsible for unrelated third-party content or services outside our control.",
+          "This does not exclude our obligations for the products we sell or for service providers acting on our behalf.",
+        ],
+      },
+      {
+        heading: "18. Website availability and liability",
+        paragraphs: [
+          "We take reasonable steps to maintain website availability but cannot guarantee uninterrupted or error-free access.",
+          "Temporary maintenance, connectivity issues, or technical faults may affect access. Please contact us if an interruption affects an active order or payment.",
+          "Each party remains responsible for losses for which it is legally liable. Any exclusion of indirect or consequential loss applies only to the extent permitted by law.",
+          "Nothing in these Terms excludes liability for fraud, wilful misconduct, or any other liability that cannot lawfully be excluded. These Terms do not remove statutory product liability or consumer remedies.",
+          "Any additional allocation of risk for a negotiated business transaction must be expressly agreed in writing and legally enforceable.",
+        ],
+      },
+      {
+        heading: "19. Events beyond reasonable control",
+        paragraphs: [
+          "Events such as natural disasters, government restrictions, serious transport disruption, or widespread infrastructure failure may delay performance.",
+          "The affected party should notify the other promptly and take reasonable steps to reduce the impact.",
+          "Such events do not automatically eliminate refund obligations or permit indefinite delay. Where fulfilment becomes impossible or materially delayed, the parties will address cancellation, revised delivery, and refunds according to the contract and applicable law.",
+        ],
+      },
+      {
+        heading: "20. Complaints and grievance redressal",
+        paragraphs: [
+          "For order concerns or complaints, contact the Grievance Contact for GLASSTEEL TRADING (OPC) PRIVATE LIMITED using the email, telephone, and postal address shown at the end of this page.",
+          "Include your order or enquiry reference, a description of the issue, and relevant supporting information.",
+          "Where the Consumer Protection (E-Commerce) Rules apply, we will acknowledge consumer complaints within 48 hours and redress them within one month of receipt.",
+          "You may also approach the National Consumer Helpline, a competent Consumer Commission, or another authority available under applicable law. Our internal complaint process does not remove those rights.",
+        ],
+      },
+      {
+        heading: "21. Governing law and disputes",
+        paragraphs: [
+          "These Terms are governed by the laws of India.",
+          "We encourage you to contact us first so that we can attempt to resolve a dispute fairly.",
+          "Disputes may be brought before courts, tribunals, Consumer Commissions, or other authorities having jurisdiction under applicable law.",
+          "Nothing in these Terms requires a consumer to give up a statutory forum or pursue a complaint only in the company’s home city.",
+        ],
+      },
+      {
+        heading: "22. Changes and general provisions",
+        paragraphs: [
+          "We may update these Terms for future website use and transactions. The revised version will display an updated date.",
+          "Changes do not retrospectively alter an accepted order without your agreement or another lawful basis.",
+          "For an order, expressly agreed transaction-specific terms prevail over general terms to the extent of a genuine inconsistency, subject always to mandatory law. New conditions added only after purchase do not automatically become binding.",
+          "If a provision is found unenforceable, the remaining provisions continue to apply to the extent legally possible.",
+          "A delay in enforcing a right does not automatically waive that right.",
+        ],
+      },
+      {
+        heading: "23. Contact us",
+        paragraphs: [
+          "GLASSTEEL TRADING (OPC) PRIVATE LIMITED",
+          "Website: https://glasssteel.in/",
+          "Support email, telephone, and registered office details are listed at the end of this page and on the Contact page.",
+        ],
       },
     ],
   },

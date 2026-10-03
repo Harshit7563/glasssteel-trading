@@ -124,9 +124,13 @@ export default function Policy() {
             </div>
           ))}
 
-          {slug === "privacy-policy" ? (
+          {slug === "privacy-policy" || slug === "terms-of-use" ? (
             <div className="policy-block">
-              <h2>Privacy contact details</h2>
+              <h2>
+                {slug === "privacy-policy"
+                  ? "Privacy contact details"
+                  : "Company contact details"}
+              </h2>
               <p>
                 <strong>Company:</strong>{" "}
                 {company?.legal_name ||
