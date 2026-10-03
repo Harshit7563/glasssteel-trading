@@ -849,23 +849,246 @@ export const policies = {
   },
   "return-refund-policy": {
     title: "Return & Refund Policy",
-    updated: "9 September 2026",
+    effective: "19 June 2026",
+    updated: "19 June 2026",
+    website: "https://glasssteel.in/",
+    intro: [
+      "This Return & Refund Policy applies to products purchased from GLASSTEEL TRADING (OPC) PRIVATE LIMITED (“GlassSteel”, “we”, “us”, or “our”) through https://glasssteel.in/ or our authorised sales channels.",
+      "It explains when a return, replacement, or refund may be available and how to raise a request.",
+      "Please read this Policy together with our Terms of Use, Shipping & Dispatch Policy, Cancellation Policy, and any product-specific conditions disclosed before purchase.",
+      "Nothing in this Policy excludes or limits rights or remedies available under applicable law.",
+    ],
     sections: [
       {
-        heading: "Eligibility",
-        body: "Returns are accepted only for manufacturing defects, wrong item dispatch, or transit damage noted at delivery — subject to inspection. Custom-cut, made-to-order, and cut-to-size glass/steel generally cannot be returned unless defective.",
+        heading: "1. When you may request a return or remedy",
+        body: "You may contact us if a product:",
+        list: [
+          "Has a manufacturing defect or was defective when supplied.",
+          "Arrives damaged in transit.",
+          "Is different from the product ordered.",
+          "Materially differs from the agreed description, material grade, dimensions, finish, or specifications.",
+          "Is missing components or accessories included in the order.",
+          "Is supplied in an incorrect quantity.",
+          "Is spurious or otherwise qualifies for a remedy under applicable law.",
+        ],
+        paragraphs: [
+          "Depending on the issue and applicable rights, the remedy may include replacement, supply of missing items, repair where appropriate and agreed, or a refund.",
+          "Shortages do not necessarily require return of the correctly delivered items.",
+          "Non-delivery and qualifying delayed-delivery claims will also be addressed under applicable law and our Shipping & Dispatch Policy.",
+        ],
       },
       {
-        heading: "Return window",
-        body: "Raise a return request within 48 hours of delivery with photos, invoice number, and SKU. Approved returns must be unused, in original packaging where applicable.",
+        heading: "2. Change-of-mind returns",
+        body: "Unless a product listing or accepted quotation expressly provides otherwise, we do not offer returns solely because:",
+        list: [
+          "You no longer require the product.",
+          "Your design preference or project plan has changed.",
+          "You ordered an incorrect quantity.",
+          "A correctly described product does not suit a purpose that was not communicated and agreed before purchase.",
+        ],
+        paragraphs: [
+          "Any exception agreed by us will be confirmed in writing, including the return conditions and any permitted charges.",
+          "This restriction does not apply where the product is defective, incorrectly supplied, materially misdescribed, or otherwise subject to a legal right of return or refund.",
+        ],
       },
       {
-        heading: "Refunds & replacements",
-        body: "Approved cases are settled by replacement or refund to the original payment method / bank transfer within 7–14 business days after goods reach our warehouse and pass QC.",
+        heading: "3. Customised and made-to-order products",
+        body: "Custom-cut glass, cut-to-size steel, fabricated items, special finishes, and other made-to-order goods are generally not eligible for change-of-mind returns once produced to approved specifications. However, customisation does not remove your rights where:",
+        list: [
+          "We supply dimensions that do not match the approved specifications.",
+          "The material, finish, or grade materially differs from what was agreed.",
+          "The product has a manufacturing defect.",
+          "The goods are damaged before or during a delivery for which we are responsible.",
+          "Another remedy is required by applicable law.",
+        ],
+        paragraphs: [
+          "If you provided incorrect measurements and we supplied the product accurately to those measurements, a return may not be available. We may offer a paid modification or replacement where feasible, subject to your approval.",
+          "Where we undertook measurement or design services, responsibility will be assessed against the agreed scope of those services.",
+        ],
       },
       {
-        heading: "Non-returnable",
-        body: "Installed materials, buyer’s-remorse on correct custom sizes, and goods damaged after delivery acceptance are not eligible for return.",
+        heading: "4. Reporting an issue",
+        paragraphs: [
+          "Please report visible damage, incorrect items, or shortages preferably within 48 hours of delivery. Early reporting helps us preserve evidence and investigate with the transporter.",
+          "If a defect is hidden or becomes apparent later, contact us promptly after discovering it.",
+          "The 48-hour request is not an automatic expiry of your statutory rights or an applicable warranty. A claim will not be rejected solely because a hidden defect could not reasonably have been discovered within that period.",
+        ],
+      },
+      {
+        heading: "5. How to submit a request",
+        body: "Contact the support email or telephone shown at the end of this page with the subject line: Return / Refund Request – [Order Number]. Please provide the information available to you:",
+        list: [
+          "Order or invoice number.",
+          "Purchaser’s name and contact details.",
+          "Product name, SKU, and quantity affected.",
+          "Delivery date.",
+          "A description of the issue and when it was discovered.",
+          "Photographs of the affected product, packaging, and shipping label.",
+          "Relevant delivery remarks, if any.",
+          "Your preferred resolution.",
+        ],
+        paragraphs: [
+          "If an invoice is unavailable, contact us with another reasonable proof of purchase so we can try to locate the transaction.",
+          "An unboxing video can assist investigation but is not mandatory as the sole evidence of a valid claim.",
+          "Never send card PINs, CVV codes, banking passwords, UPI PINs, or payment authorisation OTPs.",
+        ],
+      },
+      {
+        heading: "6. Product condition and packaging",
+        paragraphs: [
+          "For an approved voluntary or change-of-mind return, goods may need to be unused, complete, and in resaleable condition, as agreed when the return is authorised.",
+          "For defective, damaged, or incorrectly supplied goods, opening the packaging or reasonable inspection does not automatically disqualify the claim.",
+          "Please retain original packaging where reasonably possible. If it is unavailable or damaged, contact us for suitable packing instructions rather than sending fragile goods without protection.",
+          "Return the relevant accessories and components where requested and reasonably necessary. Any missing component will be assessed in relation to the actual claim rather than used as an automatic reason to refuse all remedies.",
+        ],
+      },
+      {
+        heading: "7. Installed, used, or altered products",
+        body: "Please stop using a product if you discover a defect that could create a safety risk or worsen the damage. Products damaged by misuse, incorrect installation, unauthorised alteration, unsuitable storage, or mishandling after delivery may not qualify for a remedy for that customer-caused damage. However, installation or use does not automatically exclude a claim concerning:",
+        list: [
+          "A latent manufacturing defect.",
+          "A defect discoverable only through normal use.",
+          "Incorrect specifications that were not reasonably apparent before installation.",
+          "Installation work performed by us or on our behalf.",
+          "Another right available under applicable law.",
+        ],
+        note: "Responsibility will be assessed based on the cause of the issue and the evidence available.",
+      },
+      {
+        heading: "8. Assessment and return authorisation",
+        body: "We will review your request and may ask for relevant additional information or arrange an inspection. Where a physical return is required, we will provide:",
+        list: [
+          "A return reference or written authorisation.",
+          "The correct collection or return address.",
+          "Packaging and handling instructions.",
+          "Collection or shipment arrangements.",
+          "Confirmation of who bears the return cost.",
+        ],
+        paragraphs: [
+          "Please do not send goods to a warehouse, supplier, or registered office without confirming the return destination.",
+          "Return authorisation allows the assessment process to proceed; it does not remove your rights if the subsequent assessment is disputed.",
+          "Initial assessment target: within 2–3 business days of receiving a complete request with the available supporting information.",
+        ],
+      },
+      {
+        heading: "9. Return shipping and collection costs",
+        paragraphs: [
+          "Where a return is required because of our incorrect supply, a qualifying defect, or transit damage for which we are responsible, we will arrange or bear reasonable return costs as required by applicable law.",
+          "For a voluntary return accepted as an exception, customer-paid freight or other charges must be disclosed and agreed before the return is arranged.",
+          "For bulky or fragile materials, we will coordinate suitable handling. Do not attempt unsafe repacking, lifting, or transportation.",
+          "If you are asked to arrange shipment yourself, obtain written approval of the carrier, packaging method, and reimbursable charges beforehand.",
+        ],
+      },
+      {
+        heading: "10. Inspection after return",
+        paragraphs: [
+          "Returned goods may be inspected to confirm the reported issue, product identity, completeness, and cause of damage.",
+          "We will complete the assessment within 3–5 business days after receipt and communicate the outcome.",
+          "If additional technical assessment is reasonably necessary, we will explain why and provide an updated timeline.",
+          "If we disagree with a claim, we will provide the reason and relevant findings. You may submit further evidence or escalate the matter through our grievance process.",
+          "We will not dispose of a returned product or charge for sending it back without appropriate notice and an agreed or lawful basis.",
+        ],
+      },
+      {
+        heading: "11. Replacements and repairs",
+        paragraphs: [
+          "A replacement may be offered where suitable stock is available.",
+          "For custom products, replacement production may take additional time. We will communicate the proposed schedule before proceeding.",
+          "If an identical replacement is unavailable, we may offer an alternative. We will not substitute a different size, grade, finish, or model without your agreement.",
+          "Repair will be used only where appropriate, consistent with applicable rights, and agreed where required.",
+          "You will not be forced to accept store credit or an alternative product in place of a monetary refund to which you are legally entitled.",
+        ],
+      },
+      {
+        heading: "12. Refund amount",
+        body: "For a qualifying full return caused by our error or a product issue for which we are responsible, the refund will include the amount paid for the affected goods and applicable taxes, together with delivery or other charges where refundable under applicable law. For a partial return:",
+        list: [
+          "The refund will normally reflect the amount actually paid for the affected item or quantity.",
+          "Any order-level discount will be allocated fairly.",
+          "Shared delivery charges will be assessed according to the circumstances and applicable law.",
+          "Unrelated, correctly fulfilled items will not automatically be cancelled.",
+        ],
+        paragraphs: [
+          "We do not apply restocking or inspection charges to valid claims arising from our error or a qualifying defect.",
+          "Any deduction for an agreed voluntary return must be lawful, disclosed in advance, and explained in the refund calculation.",
+        ],
+      },
+      {
+        heading: "13. Refund method",
+        paragraphs: [
+          "Refunds will normally be returned to the original payment method.",
+          "If that method cannot receive the refund, we will agree on a suitable alternative, such as a verified bank transfer to the purchaser.",
+          "For bank transfers, we may request the minimum beneficiary details needed to process the payment.",
+          "We do not require a separate payment, UPI PIN, OTP, or remote access to your device to issue a refund.",
+          "Store credit will be offered only as an optional resolution and will require your agreement.",
+        ],
+      },
+      {
+        heading: "14. Refund timelines",
+        body: "Approved refunds are ordinarily processed within 7–14 business days after:",
+        list: [
+          "The returned goods are received and the necessary inspection is completed; or",
+          "We approve the refund in cases where no physical return is required.",
+        ],
+        paragraphs: [
+          "Inspection will not be used to delay a valid refund indefinitely. Any shorter mandatory legal or payment-system timeline will take precedence.",
+          "Once the refund is initiated, we will provide confirmation and an available transaction reference.",
+          "Your bank or payment provider may take additional time to display the credit. If the refund has not appeared after the communicated period, contact us so that we can help trace it.",
+          "Business days for this Policy are Monday to Saturday, excluding applicable public holidays.",
+        ],
+      },
+      {
+        heading: "15. Cases where no physical return is required",
+        paragraphs: [
+          "In some cases, we may resolve a claim using photographs, inspection findings, or other evidence without asking you to return the goods.",
+          "We will confirm this in writing and provide any necessary instructions.",
+          "Do not discard, destroy, or resell goods involved in an open claim unless we have agreed or immediate action is necessary for safety.",
+          "A missing delivery or lost shipment does not require you to return goods you never received.",
+        ],
+      },
+      {
+        heading: "16. Duplicate payments and failed transactions",
+        paragraphs: [
+          "If you believe you have paid twice, send us the relevant transaction references and order details.",
+          "We will reconcile the payments and refund any verified excess amount.",
+          "If a payment was debited but no order was confirmed, contact us and your payment provider as appropriate. We will confirm whether the funds were received and coordinate the next step.",
+          "Funds not received by us may need to be reversed by the bank or payment provider. We will provide relevant information reasonably available to assist the investigation.",
+        ],
+      },
+      {
+        heading: "17. Cancellations and warranty claims",
+        paragraphs: [
+          "Requests made before dispatch are also subject to our Cancellation Policy.",
+          "Defects arising or discovered after delivery may fall under an applicable product warranty. Our support team will help identify the appropriate process.",
+          "A manufacturer’s warranty does not replace our own obligations as the seller under applicable law. We will not reject a claim solely by directing you to the manufacturer where we remain responsible for providing a remedy.",
+        ],
+      },
+      {
+        heading: "18. Business and bulk orders",
+        paragraphs: [
+          "For business, dealer, and project orders, additional inspection, acceptance, return, or settlement arrangements may be agreed in writing before purchase.",
+          "Such terms must be read with the accepted quotation and applicable law. Conditions introduced only after purchase do not automatically become binding.",
+          "The treatment of a customer under consumer protection law depends on the transaction and applicable law, not solely on whether an invoice includes a company name or GSTIN.",
+        ],
+      },
+      {
+        heading: "19. Complaints and escalation",
+        paragraphs: [
+          "For return or refund assistance, contact GLASSTEEL TRADING (OPC) PRIVATE LIMITED using the support email and telephone shown at the end of this page.",
+          "Support hours: Monday to Saturday, 10:00–18:00 IST (excluding public holidays).",
+          "If your concern remains unresolved, escalate using the same support email with the subject line “Return / Refund Grievance” and include your order or enquiry reference.",
+          "Where the Consumer Protection (E-Commerce) Rules apply, consumer complaints will be acknowledged within 48 hours and redressed within one month of receipt.",
+          "This complaint-handling period does not extend a shorter refund deadline that otherwise applies.",
+          "You may also approach the National Consumer Helpline, an appropriate Consumer Commission, or another competent authority. Our internal process does not remove those rights.",
+        ],
+      },
+      {
+        heading: "20. Policy updates",
+        paragraphs: [
+          "We may revise this Policy to reflect changes in our services or legal requirements.",
+          "The version disclosed and agreed when your order was accepted will apply to that order, unless a later change is mutually agreed or required by law.",
+          "The latest version will be published on this page with an updated date.",
+        ],
       },
     ],
   },
