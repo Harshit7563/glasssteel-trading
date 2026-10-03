@@ -13,8 +13,8 @@ export default function Login() {
 
   if (!loading && isLoggedIn) {
     const dest =
-      isAdmin && (redirect === "/" || redirect.startsWith("/admin"))
-        ? "/admin"
+      isAdmin && (redirect === "/" || redirect.startsWith("/Kirti"))
+        ? "/Kirti"
         : redirect;
     return <Navigate to={dest} replace />;
   }
@@ -26,7 +26,7 @@ export default function Login() {
     try {
       const user = await login(form.email, form.password);
       if (user?.role === "admin") {
-        navigate(redirect.startsWith("/admin") ? redirect : "/admin");
+        navigate(redirect.startsWith("/Kirti") ? redirect : "/Kirti");
       } else {
         navigate(redirect);
       }

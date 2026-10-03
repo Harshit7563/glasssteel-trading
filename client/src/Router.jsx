@@ -28,7 +28,7 @@ export default function Router() {
           <Route path="policies/:slug" element={<Policy />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="admin" element={<AdminGuard />}>
+          <Route path="Kirti" element={<AdminGuard />}>
             <Route index element={<AdminProducts />} />
           </Route>
         </Route>
