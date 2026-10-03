@@ -1551,19 +1551,255 @@ export const policies = {
   },
   "warranty-policy": {
     title: "Warranty Policy",
-    updated: "9 September 2026",
+    effective: "19 June 2026",
+    updated: "19 June 2026",
+    website: "https://glasssteel.in/",
+    intro: [
+      "This Warranty Policy applies to products purchased from GLASSTEEL TRADING (OPC) PRIVATE LIMITED (“GlassSteel”, “we”, “us”, or “our”) through https://glasssteel.in/ or our authorised sales channels.",
+      "It explains the scope of commercial warranties, relevant exclusions, and how to request assistance for a suspected defect.",
+      "Please read this Policy together with the product description, accepted quotation, applicable manufacturer warranty, Terms of Use, and Return & Refund Policy.",
+      "Nothing in this Policy excludes or limits statutory rights, product liability obligations, or other remedies available under applicable law.",
+    ],
     sections: [
       {
-        heading: "Coverage",
-        body: "Manufacturing defects in material/workmanship are covered as per the warranty period stated on the quotation or product sheet (typically 3–12 months for hardware finishes; glass breakage from impact is excluded).",
+        heading: "1. Warranty coverage",
+        paragraphs: [
+          "Where a commercial warranty is offered, it covers the manufacturing defects in materials or workmanship expressly identified in the relevant product warranty.",
+          "Coverage applies when the product is used within its stated purpose, specifications, operating conditions, and maintenance requirements.",
+          "Depending on the product, a covered defect may involve faulty fabrication, defective components, or premature failure of a finish under the conditions expressly covered.",
+          "A commercial warranty is not a guarantee against every form of damage, deterioration, or wear.",
+          "However, describing a product as outside a commercial warranty does not remove responsibility for defective, misdescribed, or incorrectly supplied goods where a remedy is required by law.",
+        ],
       },
       {
-        heading: "Exclusions",
-        body: "Damage from improper installation, site abuse, chemical cleaning, welding near glass, or structural movement is not covered.",
+        heading: "2. Product-specific warranty details",
+        body: "Warranty terms vary across our catalogue. Glass, hardware, cookware, furniture, decorative products, and exterior materials do not necessarily carry the same coverage. Where a warranty is offered, the product listing, quotation, or warranty document should identify:",
+        list: [
+          "The product or component covered.",
+          "The warranty provider.",
+          "The warranty duration.",
+          "The event from which the period begins.",
+          "Covered defects and relevant exclusions.",
+          "Installation and maintenance requirements.",
+          "Whether labour, transport, removal, and refitting are included.",
+          "The claim procedure.",
+        ],
+        paragraphs: [
+          "These details will be disclosed before purchase. We will not introduce new restrictions only after a claim arises.",
+          "If a warranty duration is not stated, please request clarification. The absence of a separately stated commercial warranty does not mean that statutory remedies are unavailable.",
+        ],
       },
       {
-        heading: "Claims",
-        body: "Write to sales@glassteel.in with invoice, photos, and installation date. Approved warranty claims are fulfilled by repair/replacement of the defective portion at our discretion.",
+        heading: "3. Warranty period and start date",
+        paragraphs: [
+          "The applicable duration and start date will be stated in the product-specific warranty or accepted quotation.",
+          "The start date may be delivery, installation, or commissioning, depending on the expressly agreed arrangement.",
+          "Typical commercial warranty schedule (unless a product listing or quotation states otherwise): hardware and surface finishes 3–12 months from delivery; stock glass / mirrors manufacturing defects 3–6 months from delivery (impact breakage excluded unless transit damage or incorrect supply); cookware, furniture, décor, and exterior materials as per the manufacturer or quotation; made-to-order fabrication defects assessed against approved specifications for 3–12 months from delivery.",
+          "Where different components have different warranty periods, those differences will be clearly identified.",
+          "A defect reported during the applicable period will not be treated as out of warranty solely because our inspection or processing continues beyond the expiry date.",
+        ],
+      },
+      {
+        heading: "4. Glass, mirrors, and glazed products",
+        paragraphs: [
+          "For glass and mirror products, coverage depends on the product specification and any expressly offered warranty.",
+          "A claim may require assessment of the glass type, edge condition, mounting, installation clearances, usage, and circumstances of failure.",
+          "Impact damage, scratches caused during handling, or damage caused by inappropriate installation may fall outside a commercial warranty where that cause is established.",
+          "We will not assume that every crack or breakage resulted from customer misuse. Suspected manufacturing defects, incorrect supply, transit damage, and installation faults attributable to us will be assessed on their merits.",
+          "Decorative textures, antique effects, patterns, and disclosed visual variations are not defects merely because they differ slightly from a digital image. Material departures from an approved specification or sample remain subject to review.",
+        ],
+      },
+      {
+        heading: "5. Steel, hardware, and surface finishes",
+        body: "Coverage for steel products, fittings, coatings, and decorative finishes depends on the specified material grade, intended environment, and product warranty. Where relevant, the warranty will distinguish between:",
+        list: [
+          "The underlying material or structural component.",
+          "Moving parts and hardware.",
+          "Plating, coating, polish, or decorative finish.",
+          "Seals, consumables, and replaceable components.",
+        ],
+        paragraphs: [
+          "Surface deterioration will be assessed against the promised performance and actual conditions of use.",
+          "We will not treat all corrosion, discolouration, peeling, or coating failure as automatically excluded. A claim may remain valid where the supplied grade or finish differs from the agreed specification or fails to meet an express commitment.",
+        ],
+      },
+      {
+        heading: "6. Cookware, furniture, décor, and other products",
+        paragraphs: [
+          "Manufacturer-specific instructions and warranty terms may apply to cookware, furniture, lighting, décor, and other catalogue products.",
+          "Coverage for accessories, electrical components, upholstery, coatings, or consumable parts may differ from coverage for the main product.",
+          "Any material limitation will be disclosed with the relevant warranty.",
+          "Normal wear may be excluded, but premature deterioration caused by a covered defect will be assessed rather than automatically classified as ordinary wear.",
+        ],
+      },
+      {
+        heading: "7. Customised and made-to-order products",
+        paragraphs: [
+          "Customisation does not, by itself, remove warranty coverage or legal remedies.",
+          "For cut-to-size, fabricated, or made-to-order goods, claims will be assessed against the approved drawings, measurements, material grade, finish, and disclosed tolerances.",
+          "If you provide incorrect measurements and the product is accurately manufactured to those measurements, the resulting fit issue is generally not a manufacturing defect.",
+          "Where we undertake measurement, design, fabrication, or installation services, our responsibility will be assessed against the agreed scope and applicable law.",
+        ],
+      },
+      {
+        heading: "8. Installation and site conditions",
+        paragraphs: [
+          "Products must be installed and used in accordance with relevant instructions and the agreed specifications.",
+          "Where specialist installation is necessary, this will be communicated before purchase.",
+          "Damage caused by demonstrably incorrect installation, inadequate support, incompatible fittings, overloading, or unsuitable site conditions may be excluded from a commercial warranty to the extent that those factors caused the problem.",
+          "However:",
+        ],
+        list: [
+          "Third-party installation does not automatically void every aspect of the warranty.",
+          "An installation issue unrelated to the reported defect will not automatically justify rejection.",
+          "Work performed by us or our appointed installer remains subject to our agreed and legal responsibilities.",
+          "A failure to supply necessary instructions or warnings will be considered when assessing the claim.",
+        ],
+        note: "For safety-critical applications, project suitability and installation should be assessed by appropriately qualified professionals.",
+      },
+      {
+        heading: "9. Exclusions",
+        body: "Subject to the product-specific warranty and applicable law, commercial warranty coverage may exclude damage caused by:",
+        list: [
+          "Accidental impact, dropping, or mishandling after delivery.",
+          "Use beyond stated load, temperature, or operating limits.",
+          "Abrasive or incompatible cleaning methods.",
+          "Unauthorised cutting, drilling, welding, or modification that causes the failure.",
+          "Improper storage or exposure contrary to supplied instructions.",
+          "Structural movement or external conditions outside the product’s agreed design scope.",
+          "Neglect of clearly communicated maintenance requirements.",
+          "Normal wear consistent with the product’s age and intended use.",
+        ],
+        paragraphs: [
+          "An exclusion will be applied only where relevant to the reported issue and supported by a reasonable assessment.",
+          "Damage during delivery arranged by us will be handled under our Shipping & Dispatch and Return & Refund Policies rather than dismissed as a warranty exclusion.",
+        ],
+      },
+      {
+        heading: "10. Care and maintenance",
+        paragraphs: [
+          "Please follow the product-specific cleaning, storage, installation, and maintenance instructions supplied with your purchase.",
+          "Where specialised care is required, we will provide or identify the relevant guidance.",
+          "If instructions are missing or unclear, contact us before using a cleaning chemical or carrying out a modification that could damage the product.",
+          "Maintenance records may help investigate a claim, but we will not require records for an undisclosed maintenance programme as a new condition after purchase.",
+        ],
+      },
+      {
+        heading: "11. How to submit a warranty claim",
+        body: "Contact the warranty support email or telephone shown at the end of this page. Use the subject line: Warranty Claim – [Order or Invoice Number]. Please provide the information available to you:",
+        list: [
+          "Purchaser’s name and contact details.",
+          "Order or invoice reference.",
+          "Product name, model, or SKU.",
+          "Delivery and installation dates, if known.",
+          "A description of the issue and when it began.",
+          "Clear photographs or videos.",
+          "Serial or batch number, where available.",
+          "Relevant installation or maintenance information.",
+        ],
+        paragraphs: [
+          "If the original invoice is unavailable, provide another reasonable proof of purchase so that we can try to identify the transaction.",
+          "Do not send passwords, payment PINs, or OTPs.",
+        ],
+      },
+      {
+        heading: "12. Safety and evidence preservation",
+        paragraphs: [
+          "If a product appears unsafe, stop using it and take reasonable steps to prevent injury or further damage.",
+          "Do not attempt to dismantle or repair hazardous glass, heavy fittings, electrical components, or load-bearing assemblies without appropriate expertise.",
+          "Retain affected parts and relevant packaging where safe and practical. Photograph the condition before necessary emergency work where possible.",
+          "Emergency action reasonably taken to prevent harm does not automatically invalidate a claim. Please document what happened and notify us promptly.",
+        ],
+      },
+      {
+        heading: "13. Assessment and inspection",
+        paragraphs: [
+          "We may assess a claim through photographs, a discussion with you, a site inspection, return of the affected part, or specialist testing where reasonably necessary.",
+          "We will explain the proposed assessment and any information needed.",
+          "Initial response target: within 2–3 business days of receiving a complete claim request.",
+          "Assessment target: within 5–7 business days after receiving the necessary information or product (longer if specialist testing is reasonably required).",
+          "If assessment requires additional time, we will explain the reason and provide an updated estimate.",
+          "A rejected claim will include an explanation of the findings and the relevant warranty condition. You may provide further evidence or request escalation.",
+          "No destructive testing or disposal of your product will be undertaken without appropriate authority or notice.",
+        ],
+      },
+      {
+        heading: "14. Remedies for accepted claims",
+        body: "Depending on the defect, warranty terms, and applicable rights, an accepted claim may be resolved through:",
+        list: [
+          "Repair of the affected product or component.",
+          "Replacement of the defective part.",
+          "Replacement of the product.",
+          "Refund or another legally required remedy.",
+        ],
+        paragraphs: [
+          "A limited component repair will be offered only where it reasonably resolves the issue.",
+          "We will not require acceptance of a materially different specification or an unsuitable alternative without your agreement.",
+          "If a repair fails to resolve the defect, or a suitable replacement is unavailable within a reasonable period, we will reassess the remedy.",
+          "Store credit will not replace a monetary refund to which you are entitled without your agreement.",
+        ],
+      },
+      {
+        heading: "15. Labour, transport, removal, and refitting",
+        paragraphs: [
+          "The product-specific commercial warranty will state whether transport, site visits, labour, removal, and refitting are included.",
+          "Any proposed customer-paid service must be disclosed and agreed before it is undertaken.",
+          "We will bear costs that are our responsibility under applicable law. A commercial warranty exclusion will not be used to avoid those obligations.",
+          "For bulky or fragile goods, contact us before arranging shipment or dismantling. We will coordinate appropriate instructions and confirm responsibility for costs.",
+          "No inspection or call-out fee will be imposed retrospectively without an agreed or lawful basis.",
+        ],
+      },
+      {
+        heading: "16. Manufacturer warranties",
+        paragraphs: [
+          "Where a manufacturer provides the warranty, we will identify the provider and assist with the relevant claim process.",
+          "Manufacturer assessment or authorisation may be required under that commercial warranty.",
+          "However, referring a claim to the manufacturer does not remove GlassSteel’s own responsibilities as seller or service provider under applicable law.",
+          "Additional promises expressly made by GlassSteel will be assessed separately from the manufacturer’s standard warranty.",
+        ],
+      },
+      {
+        heading: "17. Repaired and replacement products",
+        paragraphs: [
+          "When a product or component is repaired or replaced, we will confirm the warranty coverage that applies afterwards.",
+          "Post-repair or replacement coverage: the remaining balance of the original commercial warranty period applies to the repaired or replaced item, unless a longer manufacturer period or a written extension is expressly stated.",
+          "We will not assume that every replacement starts a new full warranty period, or that no further coverage applies, without communicating the applicable terms.",
+          "Any additional rights required by law remain unaffected.",
+        ],
+      },
+      {
+        heading: "18. Out-of-warranty assistance",
+        paragraphs: [
+          "If a product falls outside commercial warranty coverage, we may offer a paid inspection, repair, replacement part, or replacement product where feasible.",
+          "We will provide an estimate and obtain your approval before chargeable work begins.",
+          "Expiry of a commercial warranty does not automatically decide whether a separate statutory claim is available.",
+        ],
+      },
+      {
+        heading: "19. Warranty registration and transfer",
+        paragraphs: [
+          "If a manufacturer requires registration for an additional commercial benefit, the requirement and deadline will be disclosed before purchase.",
+          "Failure to complete optional registration does not remove statutory rights or an unconditional warranty already promised.",
+          "Transferability to a subsequent owner depends on the disclosed product-specific terms.",
+          "GlassSteel does not currently require a separate warranty registration for catalogue purchases unless a manufacturer document expressly requires it for that product.",
+        ],
+      },
+      {
+        heading: "20. Complaints and escalation",
+        paragraphs: [
+          "For unresolved warranty concerns, contact GLASSTEEL TRADING (OPC) PRIVATE LIMITED using the support email and telephone shown at the end of this page.",
+          "Please include your claim reference and the reason you disagree with the outcome.",
+          "Complaints will be handled within applicable legal timelines. You may also approach the National Consumer Helpline, a competent Consumer Commission, or another authority available under applicable law.",
+          "This Policy does not exclude liability that cannot lawfully be excluded, including applicable product liability obligations.",
+        ],
+      },
+      {
+        heading: "21. Policy updates",
+        paragraphs: [
+          "We may update this Policy to reflect changes in products, warranty arrangements, or legal requirements.",
+          "The warranty terms disclosed and agreed at the time of purchase apply to that purchase, unless a later change is mutually agreed or required by law.",
+          "The latest version will be published on this page with an updated date.",
+        ],
       },
     ],
   },

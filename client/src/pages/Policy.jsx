@@ -131,6 +131,7 @@ export default function Policy() {
             "return-refund-policy",
             "cancellation-policy",
             "gst-pricing-policy",
+            "warranty-policy",
           ].includes(slug) ? (
             <div className="policy-block">
               <h2>
@@ -144,7 +145,9 @@ export default function Policy() {
                         ? "Cancellation support"
                         : slug === "gst-pricing-policy"
                           ? "Billing & invoice support"
-                          : "Company contact details"}
+                          : slug === "warranty-policy"
+                            ? "Warranty support contact"
+                            : "Company contact details"}
               </h2>
               <p>
                 <strong>Company:</strong>{" "}
