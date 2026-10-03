@@ -1,53 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useOutletContext, useParams } from "react-router-dom";
 import { api } from "../api";
 import ProductCard from "../components/ProductCard";
 import { discountPercent, inr, whatsappLink } from "../utils";
-
-const GALLERY = {
-  "building-interior": [
-    "/products/bi-partition.jpg",
-    "/products/bi-lobby.jpg",
-    "/products/bi-glass.jpg",
-    "/products/bi-door.jpg",
-  ],
-  "home-interior": [
-    "/products/hi-sofa.jpg",
-    "/products/hi-dining.jpg",
-    "/products/hi-bed.jpg",
-    "/products/hi-curtain.jpg",
-  ],
-  "steel-antique-glass": [
-    "/products/sg-window.jpg",
-    "/products/sg-screen.jpg",
-    "/products/sg-antique.jpg",
-    "/products/sg-railing.jpg",
-  ],
-  "steel-product": [
-    "/products/sp-cooker.jpg",
-    "/products/sp-pan.jpg",
-    "/products/sp-dinner.jpg",
-    "/products/sp-tiffin.jpg",
-  ],
-  "home-decor": [
-    "/products/hd-vase.jpg",
-    "/products/hd-art.jpg",
-    "/products/hd-mirror.jpg",
-    "/products/hd-plant.jpg",
-  ],
-  "building-interior-item": [
-    "/products/bii-laminate.jpg",
-    "/products/bii-louver.jpg",
-    "/products/bii-vinyl.jpg",
-    "/products/bii-led.jpg",
-  ],
-  "building-exterior": [
-    "/products/be-facade.jpg",
-    "/products/be-cladding.jpg",
-    "/products/be-balcony.jpg",
-    "/products/be-stone.jpg",
-  ],
-};
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -55,12 +10,10 @@ export default function ProductDetail() {
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
-  const [activeImg, setActiveImg] = useState(0);
 
   useEffect(() => {
     setLoading(true);
     setError("");
-    setActiveImg(0);
     api
       .getProduct(id)
       .then(setData)
@@ -68,15 +21,7 @@ export default function ProductDetail() {
       .finally(() => setLoading(false));
   }, [id]);
 
-  const gallery = useMemo(() => {
-    if (!data?.product) return [];
-    const pool =
-      GALLERY[data.product.category_slug] ||
-      GALLERY["steel-antique-glass"];
-    const primary = data.product.image_url || pool[0];
-    const rest = pool.filter((u) => u !== primary);
-    return [primary, ...rest].slice(0, 4);
-  }, [data]);
+  const primaryImg = data?.product?.image_url || "/products/steel-01.jpg";
 
   if (loading) {
     return (
@@ -126,25 +71,12 @@ export default function ProductDetail() {
           <div className="detail-gallery">
             <div className="detail-media">
               <img
-                src={gallery[activeImg]}
+                src={primaryImg}
                 alt={p.name}
                 width={900}
                 height={700}
               />
               {off > 0 ? <span className="badge-off">{off}% OFF</span> : null}
-            </div>
-            <div className="detail-thumbs">
-              {gallery.map((src, i) => (
-                <button
-                  key={src}
-                  type="button"
-                  className={i === activeImg ? "active" : ""}
-                  onClick={() => setActiveImg(i)}
-                  aria-label={`Photo ${i + 1}`}
-                >
-                  <img src={src} alt="" loading="lazy" />
-                </button>
-              ))}
             </div>
           </div>
 
